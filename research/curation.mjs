@@ -1,0 +1,110 @@
+import { classifyStorage } from './storage.mjs';
+import { expandedRows } from './expansion.mjs';
+// Project interpretations, checked against primary sources. Metadata is scraped separately.
+// Unknown lifecycle policies are intentionally left unclaimed.
+const record = (id, short, categories, stages, summary, representation, write, retrieve, update, forget, evaluation, limitations, setting = 'single') => ({
+  id, short, categories, stages, summary, representation,
+  lifecycle: { write, retrieve, update, forget }, evaluation, limitations, setting,
+  reviewStatus: 'Agent source-check complete; human review pending',
+  evidenceDepth: 'abstract', evidenceLocator: 'Abstract', scope: 'main',
+  staleKnowledge: 'Not established by the cited evidence',
+  findings: 'See the source for reported results; benchmark values are not normalized across papers.'
+});
+const unknown = 'Not specified in the abstract';
+export const curation = [
+  record('2505.23422','CTIM-Rover',['experience','repository','evaluation'],['explore','debug','reflect'],
+    'Adds general and repository-specific experience to AutoCodeRover. The study reports that retrieved lessons and example trajectories can distract the agent, with no improvement over its baseline configurations.',
+    'General and repository-level cross-task experience banks', 'Extract experience from completed tasks', 'Retrieve lessons and example trajectories for later issues', unknown, unknown,
+    'Real-world software engineering tasks with AutoCodeRover', 'Negative result: more stored experience does not necessarily improve issue resolution.'),
+  record('2510.01003','Repository Memory',['repository','experience'],['explore','debug'],
+    'Uses prior commits, associated issues, and summaries of changing modules as retained repository knowledge. Agents consult this history to locate relevant code for new bug reports.',
+    'Non-parametric repository memory of commits, issues, and module summaries', 'Construct memory from repository history', 'Tools retrieve historical commits and functionality summaries', 'Code evolution informs module summaries', unknown,
+    'SWE-bench Verified and SWE-bench Live code localization', 'Localization improvements should not be interpreted as measured end-to-end repair improvements.'),
+  record('2609.23570','VibeMemBench',['evaluation','experience','repository'],['code','debug','test'],
+    'Tests whether prior repository experience actually helps agents make executable code changes. It compares direct experience injection with memory systems that must construct and retrieve useful records themselves.',
+    'Repository history trajectories and verified reusable experiences', 'Construct memory from prior coding trajectories', 'Memory systems retrieve experience for a new repository task', unknown, unknown,
+    '111 coding targets from 90 repositories and held-out solvers', 'Targets were selected for useful historical experience; findings are conditional on this benchmark construction.'),
+  record('2606.28434','SWE-MeM',['context','governance'],['plan','code','debug','test'],
+    'Trains coding agents to manage their own context using a flexible compression tool. Memory actions depend on progress and remaining context, and training links memory choices with successful issue resolution.',
+    'Compressed interaction history within a coding episode', 'Agent chooses what and when to compress', 'Compressed context remains available for continued issue solving', 'Proactive and on-demand memory actions', 'Compression replaces lengthy history; specific deletion rules are not established',
+    'SWE-bench Verified with memory-management baselines', 'Results depend on jointly trained agents; transfer to arbitrary untrained agents is not established.'),
+  record('2509.25140','ReasoningBank',['experience','skills'],['plan','code','reflect'],
+    'Distills transferable strategies from both successful and unsuccessful runs. Agents retrieve those strategies for new tasks and feed new lessons back into the bank; additional exploration can enrich the memory.',
+    'Generalizable reasoning strategies derived from interaction traces', 'Distill lessons from self-judged successful and failed experience', 'Retrieve relevant strategies at the start of a new task', 'Integrate new learning after task interactions', unknown,
+    'Web tasks and software engineering benchmarks', 'Self-judged experience and extra test-time computation can affect the quality and cost of the resulting memory.'),
+  record('2608.06153','Global Skill Evolution',['skills','governance'],['test','review','reflect'],
+    'Maintains relationships among coding skills and consolidates related skills into reusable capabilities. Replaying prior tasks checks whether new skill revisions overfit or cause regressions.',
+    'Skill bank with an explicit skill relation graph', 'Capture local skill updates', 'Use reusable skills in coding-agent tasks', 'Cluster-based consolidation and relationship co-evolution', 'Retention decisions are checked through replay; explicit deletion policy is not specified',
+    'Bug-revealing test generation and false-positive report filtering', 'Task coverage differs from issue-repair benchmarks; cross-benchmark performance is not directly comparable.'),
+  record('2608.13662','MOOSEDev',['repository','governance'],['plan','code','review'],
+    'Stores project decisions, constraints, lessons, and their rationale in an ontology-backed graph. Lifecycle and supersession links support queries about which knowledge remains current.',
+    'Typed project knowledge graph exposed through MCP', 'Capture project decisions, lessons, constraints, and rationale', 'Structured queries over provenance, status, and supersession', 'Records carry lifecycle status and supersession links', 'Supersession is modeled; physical deletion is not specified',
+    'Retrieval over a public corpus of 835 typed records', 'Uses a proprietary reasoning engine; retrieval evidence does not establish general coding-task improvement.'),
+  record('2605.01567','RL Developer Memory',['governance','repository'],['debug','test','review'],
+    'Connects memory retrieval to feedback and verified resolutions for reinforcement-learning code. Logged decisions and review gates govern memory use; a learned ranking policy is evaluated in shadow mode.',
+    'Local developer memory with theory-to-code metadata and retrieval telemetry', 'Record verified resolutions linked to earlier retrieval events', 'Deterministic issue matching ranks candidate memories', 'Normalize feedback and evaluate a residual policy under conservative gates', unknown,
+    'Deterministic 200-case RL coding benchmark', 'Active learned-policy deployment and official-client MCP interoperability are not supported by the reported evidence.'),
+  record('2608.31057','Working Memory Evaluation',['context','evaluation'],['code','debug','test'],
+    'Separates instructions, artifacts, tool outputs, and generated state when studying coding-agent context. It evaluates compression and retrieval policies while distinguishing stored state from delivered context and management overhead.',
+    'Semantically typed working-memory objects', 'Retain objects from archived coding trajectories', 'Object-aware retrieval or compressed context delivery', 'Object-aware compression policies', 'Retention and compression differ by object type',
+    '55 archived coding-agent trajectories and real-system replay', 'Calibration improvements may not transfer to held-out tasks; equal nominal budgets do not imply equal delivered context.'),
+  record('2602.21611','Subtask Memory',['experience','context'],['explore','plan','debug','test'],
+    'Aligns stored experience with functional subtasks rather than entire issues. This addresses cases where similar issue descriptions need different reasoning at individual workflow stages.',
+    'Experience records aligned with functional software subtasks', 'Store memories at subtask granularity', 'Retrieve experience for the current functional stage', 'Updates follow the agent functional decomposition', unknown,
+    'SWE-bench Verified across multiple model backbones', 'Workflow-stage alignment depends on the agent decomposition; headline issue similarity can be misleading.'),
+  record('2608.20664','DreamBench-SWE',['evaluation','governance'],['code','test','maintain'],
+    'Evaluates memory hygiene across software sessions whose later tasks require evidence from earlier sessions. Hidden executable checks distinguish remembered facts from successful software outcomes.',
+    'Multi-session event memories and typed-plus-raw reference records', 'Retain evidence from earlier sessions', 'Later sessions need non-inferable prior evidence', unknown, 'Memory hygiene is evaluated; a general forgetting method is not established',
+    'Multi-session software tasks with hidden executable oracles', 'The audit does not establish broad product superiority or a causal external-memory mechanism.'),
+  record('2507.06229','Agent KB',['experience','collaboration'],['plan','debug','reflect'],
+    'Collects experience from multiple agent frameworks into a reusable knowledge base. Retrieval supplies plans and diagnostic fixes, with a disagreement gate intended to reduce interference from mismatched advice.',
+    'Structured cross-framework trajectory knowledge base', 'Aggregate experience from heterogeneous agent frameworks', 'Hybrid retrieval for planning and feedback-driven fixes', 'Automatically generated experiences populate the knowledge base', unknown,
+    'Multiple agent benchmarks including SWE-bench with OpenHands', 'Cross-domain results and different pass metrics must be kept separate.', 'cross-framework'),
+  record('2604.14004','Memory Transfer Learning',['experience','skills','evaluation'],['plan','code','test','reflect'],
+    'Compares concrete traces with abstract insights in a shared pool of coding experience. The study finds that transferable validation knowledge can help across domains, while overly specific traces can hurt.',
+    'Unified memory pool with four representations from traces to insights', 'Accumulate experience from heterogeneous coding domains', 'Transfer memory across coding tasks and model backbones', 'Pool size and abstraction level are experimental variables', unknown,
+    'Six coding benchmarks', 'Low-level traces can produce negative transfer; average gains hide domain-specific differences.'),
+  record('2605.25430','CODESKILL',['skills','governance','experience'],['code','test','reflect'],
+    'Learns how to extract and maintain coding skills from agent trajectories. A policy balances skill quality with executable downstream feedback to keep a compact bank of procedures.',
+    'Multi-granularity procedural skill bank', 'Extract skills from coding trajectories', 'Stored procedures guide future software tasks', 'A learned management policy evolves and maintains skills', 'Compact bank maintenance is reported; exact deletion behavior needs full-text review',
+    'EnvBench, SWE-bench Verified, and Terminal-Bench 2', 'Requires management-policy training and verifiable feedback from a frozen downstream agent.'),
+  record('2601.07190','Focus / Active Compression',['context','governance'],['explore','code','debug'],
+    'Lets a coding agent consolidate important findings into a retained knowledge block and remove raw history. The reported pilot tests autonomous compression on a small set of context-heavy repair tasks.',
+    'Persistent knowledge block plus prunable interaction history', 'Agent consolidates key findings during exploration', 'Retained knowledge is used after history pruning', 'Agent-triggered consolidation', 'Actively prune raw interaction history',
+    'Five context-intensive SWE-bench Lite instances', 'Very small evaluation: the findings do not establish broad accuracy equivalence or general token savings.'),
+  record('2604.23069','ContextWeaver',['context','governance'],['plan','code','debug','test'],
+    'Builds a dependency graph over reasoning steps and selects context through those relationships. Summarized dependency paths and execution feedback aim to retain information needed by later actions.',
+    'Dependency graph of interaction and reasoning steps', 'Construct links from each step to the earlier evidence it depends on', 'Traverse dependencies to select relevant context', 'Condense paths into reusable units and validate with execution feedback', unknown,
+    'SWE-bench Verified and Lite', 'Comparison against sliding windows does not isolate every contribution of graph construction, summaries, and validation.'),
+  record('2512.22087','CAT / SWE-Compressor',['context','governance'],['plan','code','debug'],
+    'Treats context maintenance as a tool the software agent can invoke. A structured workspace keeps task meaning, condensed history, and recent interactions, while training teaches milestone-based compression.',
+    'Stable task semantics, condensed long-term history, recent interactions', 'Proactively compress trajectories into actionable summaries', 'Use the structured workspace for subsequent agent decisions', 'Callable context actions at appropriate task milestones', 'Compression reduces retained history; precise deletion rules need full-text review',
+    'SWE-bench Verified', 'Long-term memory here describes retained episode context; cross-task persistence is not established by the abstract.'),
+  record('2512.10398','Confucius Code Agent',['context','repository','experience'],['explore','code','test','reflect'],
+    'Combines long-session context management with persistent notes for learning across sessions. Its scaffolding separates orchestration, memory, and tool extensions for large codebases.',
+    'Managed working context and persistent cross-session notes', 'A persistent note-taking system retains learning', 'Notes and managed context support continued software work', 'Cross-session continual learning is supported', unknown,
+    'SWE-bench Pro', 'The reported system has several components; overall performance does not isolate the causal effect of memory.'),
+  record('2510.21903','ToM-SWE',['collaboration','repository'],['plan','code','maintain'],
+    'Pairs a coding agent with a partner that tracks the developer’s goals, constraints, and preferences. Persistent user memory helps interpret ambiguous instructions and carry intent across interactions.',
+    'Persistent user model derived from instructions and interaction history', 'Infer user goals, constraints, and preferences from interactions', 'Partner agent supplies user-related suggestions to the coding agent', 'Maintain the user model across interactions', unknown,
+    'Ambiguous and stateful SWE-bench plus a developer study', 'Customized benchmarks and user satisfaction results should not be compared directly with standard SWE-bench.', 'multi-agent'),
+  record('2608.21867','MemGuard',['governance','experience'],['code','test','reflect','maintain'],
+    'Attaches verifier-derived confidence and uncertainty to candidate experiences. These signals persist through admission, retrieval, conflict handling, summarization, and archival instead of serving only as a one-time filter.',
+    'Experience records with persistent verification metadata', 'Verify candidates before activating them', 'Use persistent verifier descriptors during retrieval', 'Resolve conflicts and summarize using verifier metadata', 'Archive memories as part of lifecycle governance',
+    'Terminal-Bench 2.0, SWE-bench Verified, and web benchmarks', 'Evidence comes from a defined set of backbones and matched runtime budgets; it is not a universal guarantee.'),
+  ...expandedRows.map(args=>record(...args))
+];
+
+Object.assign(curation.find(p=>p.id==='2308.00352'),{evidenceDepth:'full-text',evidenceLocator:'Section 3.2: Communication Protocol; Figure 2',evidencePath:'html',reviewStatus:'Agent source-check of cited full-text section complete; human review pending'});
+Object.assign(curation.find(p=>p.id==='2307.07924'),{evidenceDepth:'full-text',evidenceLocator:'Section 3.1: Chat Chain, Memory subsection',evidencePath:'html',reviewStatus:'Agent source-check of cited full-text section complete; human review pending'});
+Object.assign(curation.find(p=>p.id==='2405.15793'),{evidenceDepth:'full-text',evidenceLocator:'Section 3: Context management; Table 3; Appendix A.3',evidencePath:'html',reviewStatus:'Agent source-check of cited full-text section complete; human review pending',staleKnowledge:'Older observations collapse to avoid outdated file information in active context'});
+
+for (let i=0;i<curation.length;i++) curation[i]=classifyStorage(curation[i]);
+
+export const alternateSources = {
+  '2303.11366': { publication: 'Conference paper', venue: 'NeurIPS 2023', url: 'https://papers.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html' },
+  '2308.00352': { publication: 'Conference paper', venue: 'ICLR 2024', url: 'https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html' },
+  '2505.23422': { publication: 'Workshop paper', venue: 'REALM 2025', url: 'https://aclanthology.org/2025.realm-1.30/' },
+  '2510.01003': { publication: 'Conference paper', venue: 'ICLR 2026', url: 'https://proceedings.iclr.cc/paper_files/paper/2026/hash/b4c06f095368497f3ac19422efef8133-Abstract-Conference.html' },
+  '2509.25140': { publication: 'Conference paper', venue: 'ICLR 2026', url: 'https://openreview.net/forum?id=jL7fwchScm', verificationUrl: 'https://www.research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/' }
+};

@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "cutoff": "2026-09-27",
+  "start": "2023-01-01",
+  "pilotTarget": 20,
+  "expansionTarget": 100,
+  "scope": "Memory management in LLM agents for software development",
+  "queries": [
+    "(all:\"software engineering\" OR all:\"coding agent\") AND (all:memory OR all:\"context management\")",
+    "(all:\"SWE-bench\" OR all:\"code agent\") AND (all:memory OR all:\"experience reuse\" OR all:\"skill bank\")",
+    "(all:\"software engineering\" OR all:\"coding agents\") AND (all:\"reflection\" OR all:\"persistent notes\" OR all:\"context compression\")"
+  ],
+  "inclusion": [
+    "Explicit software-development agent setting or software-engineering evaluation",
+    "Memory representation, lifecycle, retrieval, compression, reuse, or evaluation is a substantive contribution",
+    "Primary publication source available for verification",
+    "Initial submission at or before the collection cutoff"
+  ],
+  "exclusion": [
+    "Generic agent memory without an explicit software-development connection",
+    "Medical/clinical coding, which does not mean software development",
+    "Ordinary code retrieval without an explicit memory contribution",
+    "Product marketing or implementation repository without a research paper",
+    "Duplicate versions; retain one canonical record and alternate source links"
+  ],
+  "sources": [
+    {"name":"arXiv","role":"Primary metadata and abstracts; official Atom API first, rate-limited abstract-page fallback"},
+    {"name":"ACL Anthology","role":"Verify CTIM-Rover workshop publication"},
+    {"name":"ICLR proceedings","role":"Verify Repository Memory conference publication"},
+    {"name":"Google Research / OpenReview","role":"Author's primary research announcement verifies ReasoningBank conference status; OpenReview link retained, direct API requires challenge verification"}
+  ],
+  "similarity": {"model":"Xenova/all-MiniLM-L6-v2","dtype":"q8","pooling":"mean","normalize":true,"metric":"cosine","neighbors":4,"clusterThreshold":0.64,"text":"summary, memory representation, lifecycle descriptions, workflow stages","grouping":"Deterministic average-linkage agglomerative clustering at cosine similarity 0.64, alongside overlapping source-based mechanism labels; automatic groups require human review"},
+  "review": "Agent-assisted extraction checked against primary-source abstracts; independent human review pending. Full-text evidence used only when explicitly recorded.",
+  "coverage": "A focused initial collection, not a systematic or exhaustive review. Search coverage and counts are reported in the collection manifest."
+}

@@ -1,0 +1,3357 @@
+[
+  {
+    "id": "2505.23422",
+    "version": "v1",
+    "title": "From Knowledge to Noise: CTIM-Rover and the Pitfalls of Episodic Memory in Software Engineering Agents",
+    "authors": [
+      "Tobias Lindenbauer",
+      "Georg Groh",
+      "Hinrich Schütze"
+    ],
+    "published": "2025-05-29",
+    "updated": "2025-05-29",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2505.23422v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "CTIM-Rover",
+    "categories": [
+      "experience",
+      "repository",
+      "evaluation"
+    ],
+    "stages": [
+      "explore",
+      "debug",
+      "reflect"
+    ],
+    "summary": "Adds general and repository-specific experience to AutoCodeRover. The study reports that retrieved lessons and example trajectories can distract the agent, with no improvement over its baseline configurations.",
+    "representation": "General and repository-level cross-task experience banks",
+    "lifecycle": {
+      "write": "Extract experience from completed tasks",
+      "retrieve": "Retrieve lessons and example trajectories for later issues",
+      "update": "Not specified in the abstract",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Real-world software engineering tasks with AutoCodeRover",
+    "limitations": "Negative result: more stored experience does not necessarily improve issue resolution.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2505.23422v1",
+    "evidenceUrl": "https://arxiv.org/abs/2505.23422v1",
+    "publication": "Workshop paper",
+    "venue": "REALM 2025",
+    "alternateSources": [
+      {
+        "publication": "Workshop paper",
+        "venue": "REALM 2025",
+        "url": "https://aclanthology.org/2025.realm-1.30/"
+      }
+    ],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.655Z",
+    "abstractHash": "11b0be503fe77d618daa9098e6b2c8ae20eb0b1eff55b81264fcaf07a36ad90a",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Experience & skill banks",
+    "storageCategories": [
+      "banks"
+    ]
+  },
+  {
+    "id": "2510.01003",
+    "version": "v2",
+    "title": "Improving Code Localization with Repository Memory",
+    "authors": [
+      "Boshi Wang",
+      "Weijian Xu",
+      "Yunsheng Li",
+      "Mei Gao",
+      "Yujia Xie",
+      "Huan Sun",
+      "Dongdong Chen"
+    ],
+    "published": "2025-10-01",
+    "updated": "2026-02-06",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2510.01003v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "Repository Memory",
+    "categories": [
+      "repository",
+      "experience"
+    ],
+    "stages": [
+      "explore",
+      "debug"
+    ],
+    "summary": "Uses prior commits, associated issues, and summaries of changing modules as retained repository knowledge. Agents consult this history to locate relevant code for new bug reports.",
+    "representation": "Non-parametric repository memory of commits, issues, and module summaries",
+    "lifecycle": {
+      "write": "Construct memory from repository history",
+      "retrieve": "Tools retrieve historical commits and functionality summaries",
+      "update": "Code evolution informs module summaries",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified and SWE-bench Live code localization",
+    "limitations": "Localization improvements should not be interpreted as measured end-to-end repair improvements.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2510.01003v2",
+    "evidenceUrl": "https://arxiv.org/abs/2510.01003v2",
+    "publication": "Conference paper",
+    "venue": "ICLR 2026",
+    "alternateSources": [
+      {
+        "publication": "Conference paper",
+        "venue": "ICLR 2026",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/b4c06f095368497f3ac19422efef8133-Abstract-Conference.html"
+      }
+    ],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.657Z",
+    "abstractHash": "77df3c1bdba3aaa691e0df499baae79cf9fb048ce85b75a67e039f9a5c90d869",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "notes",
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2609.23570",
+    "version": "v1",
+    "title": "VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks",
+    "authors": [
+      "Liyang Fan",
+      "Yingcheng Shi",
+      "Yongbin Li",
+      "Chenghao Sun",
+      "Xin Chen",
+      "Xander Xu",
+      "Hu Wei",
+      "Shiwen Ni",
+      "Min Yang",
+      "Jieping Ye"
+    ],
+    "published": "2026-09-20",
+    "updated": "2026-09-20",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2609.23570v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "VibeMemBench",
+    "categories": [
+      "evaluation",
+      "experience",
+      "repository"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Tests whether prior repository experience actually helps agents make executable code changes. It compares direct experience injection with memory systems that must construct and retrieve useful records themselves.",
+    "representation": "Repository history trajectories and verified reusable experiences",
+    "lifecycle": {
+      "write": "Construct memory from prior coding trajectories",
+      "retrieve": "Memory systems retrieve experience for a new repository task",
+      "update": "Not specified in the abstract",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "111 coding targets from 90 repositories and held-out solvers",
+    "limitations": "Targets were selected for useful historical experience; findings are conditional on this benchmark construction.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2609.23570v1",
+    "evidenceUrl": "https://arxiv.org/abs/2609.23570v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.658Z",
+    "abstractHash": "e7f9887cbde2b6f672bf60c73fb0952e87d994342975bc4cfdf182ca298e4bca",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2606.28434",
+    "version": "v1",
+    "title": "SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents",
+    "authors": [
+      "Shuzheng Gao",
+      "Wenhao Zeng",
+      "Zhaojian Yu",
+      "Jianqiao Wangni",
+      "Chaozheng Wang",
+      "Kai Cai",
+      "Shilin He",
+      "Michael R. Lyu"
+    ],
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2606.28434v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "SWE-MeM",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Trains coding agents to manage their own context using a flexible compression tool. Memory actions depend on progress and remaining context, and training links memory choices with successful issue resolution.",
+    "representation": "Compressed interaction history within a coding episode",
+    "lifecycle": {
+      "write": "Agent chooses what and when to compress",
+      "retrieve": "Compressed context remains available for continued issue solving",
+      "update": "Proactive and on-demand memory actions",
+      "forget": "Compression replaces lengthy history; specific deletion rules are not established"
+    },
+    "evaluation": "SWE-bench Verified with memory-management baselines",
+    "limitations": "Results depend on jointly trained agents; transfer to arbitrary untrained agents is not established.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2606.28434v1",
+    "evidenceUrl": "https://arxiv.org/abs/2606.28434v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.658Z",
+    "abstractHash": "40e10289971d38912053fd56195b298247bac2a1a5539c6f20d879648ea0e742",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Working context & summaries",
+    "storageCategories": [
+      "histories",
+      "context"
+    ]
+  },
+  {
+    "id": "2509.25140",
+    "version": "v2",
+    "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+    "authors": [
+      "Siru Ouyang",
+      "Jun Yan",
+      "I-Hung Hsu",
+      "Yanfei Chen",
+      "Ke Jiang",
+      "Zifeng Wang",
+      "Rujun Han",
+      "Long T. Le",
+      "Samira Daruki",
+      "Xiangru Tang",
+      "Vishy Tirumalashetty",
+      "George Lee",
+      "Mahsan Rofouei",
+      "Hangfei Lin",
+      "Jiawei Han",
+      "Chen-Yu Lee",
+      "Tomas Pfister"
+    ],
+    "published": "2025-09-29",
+    "updated": "2026-03-16",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2509.25140v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "ReasoningBank",
+    "categories": [
+      "experience",
+      "skills"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "reflect"
+    ],
+    "summary": "Distills transferable strategies from both successful and unsuccessful runs. Agents retrieve those strategies for new tasks and feed new lessons back into the bank; additional exploration can enrich the memory.",
+    "representation": "Generalizable reasoning strategies derived from interaction traces",
+    "lifecycle": {
+      "write": "Distill lessons from self-judged successful and failed experience",
+      "retrieve": "Retrieve relevant strategies at the start of a new task",
+      "update": "Integrate new learning after task interactions",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Web tasks and software engineering benchmarks",
+    "limitations": "Self-judged experience and extra test-time computation can affect the quality and cost of the resulting memory.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2509.25140v2",
+    "evidenceUrl": "https://arxiv.org/abs/2509.25140v2",
+    "publication": "Conference paper",
+    "venue": "ICLR 2026",
+    "alternateSources": [
+      {
+        "publication": "Conference paper",
+        "venue": "ICLR 2026",
+        "url": "https://openreview.net/forum?id=jL7fwchScm",
+        "verificationUrl": "https://www.research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/"
+      }
+    ],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "d984883b65895d02debd54edbd198f0aadf8bd295da869680c3ebbe08d2e9492",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Experience & skill banks",
+    "storageCategories": [
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.06153",
+    "version": "v1",
+    "title": "Learning Globally Reusable Skills for Coding Agents",
+    "authors": [
+      "Chen Yang",
+      "Jiashuo Tian",
+      "Ziqi Wang",
+      "Xinyin Liu",
+      "Meiru Ye",
+      "Junjie Chen"
+    ],
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.06153v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Global Skill Evolution",
+    "categories": [
+      "skills",
+      "governance"
+    ],
+    "stages": [
+      "test",
+      "review",
+      "reflect"
+    ],
+    "summary": "Maintains relationships among coding skills and consolidates related skills into reusable capabilities. Replaying prior tasks checks whether new skill revisions overfit or cause regressions.",
+    "representation": "Skill bank with an explicit skill relation graph",
+    "lifecycle": {
+      "write": "Capture local skill updates",
+      "retrieve": "Use reusable skills in coding-agent tasks",
+      "update": "Cluster-based consolidation and relationship co-evolution",
+      "forget": "Retention decisions are checked through replay; explicit deletion policy is not specified"
+    },
+    "evaluation": "Bug-revealing test generation and false-positive report filtering",
+    "limitations": "Task coverage differs from issue-repair benchmarks; cross-benchmark performance is not directly comparable.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.06153v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.06153v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "0de21e6b3d38d88fe7fe1e6e73e40f5177645e8a08cabeb2ea2ff7f05f8b254d",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Linked knowledge Experience & skill banks",
+    "storageCategories": [
+      "graphs",
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.13662",
+    "version": "v1",
+    "title": "Ontology-Grounded Project Memory for Coding Agents",
+    "authors": [
+      "James Adam"
+    ],
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.13662v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "MOOSEDev",
+    "categories": [
+      "repository",
+      "governance"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "review"
+    ],
+    "summary": "Stores project decisions, constraints, lessons, and their rationale in an ontology-backed graph. Lifecycle and supersession links support queries about which knowledge remains current.",
+    "representation": "Typed project knowledge graph exposed through MCP",
+    "lifecycle": {
+      "write": "Capture project decisions, lessons, constraints, and rationale",
+      "retrieve": "Structured queries over provenance, status, and supersession",
+      "update": "Records carry lifecycle status and supersession links",
+      "forget": "Supersession is modeled; physical deletion is not specified"
+    },
+    "evaluation": "Retrieval over a public corpus of 835 typed records",
+    "limitations": "Uses a proprietary reasoning engine; retrieval evidence does not establish general coding-task improvement.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.13662v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.13662v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "b74fc8deaf34decf98e3e3e256957de76811946c322616c6114369e528dfe2f0",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Linked knowledge",
+    "storageCategories": [
+      "records",
+      "graphs"
+    ]
+  },
+  {
+    "id": "2605.01567",
+    "version": "v1",
+    "title": "Feedback-Normalized Developer Memory for Reinforcement-Learning Coding Agents: A Safety-Gated MCP Architecture",
+    "authors": [
+      "Mehmet Iscan"
+    ],
+    "published": "2026-05-02",
+    "updated": "2026-05-02",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.01567v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "RL Developer Memory",
+    "categories": [
+      "governance",
+      "repository"
+    ],
+    "stages": [
+      "debug",
+      "test",
+      "review"
+    ],
+    "summary": "Connects memory retrieval to feedback and verified resolutions for reinforcement-learning code. Logged decisions and review gates govern memory use; a learned ranking policy is evaluated in shadow mode.",
+    "representation": "Local developer memory with theory-to-code metadata and retrieval telemetry",
+    "lifecycle": {
+      "write": "Record verified resolutions linked to earlier retrieval events",
+      "retrieve": "Deterministic issue matching ranks candidate memories",
+      "update": "Normalize feedback and evaluate a residual policy under conservative gates",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Deterministic 200-case RL coding benchmark",
+    "limitations": "Active learned-policy deployment and official-client MCP interoperability are not supported by the reported evidence.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.01567v1",
+    "evidenceUrl": "https://arxiv.org/abs/2605.01567v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "ae5119e86745d8ec88d46d6c942893d67a7f2e69a074313c0c7da0fec2e1c7f0",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.31057",
+    "version": "v1",
+    "title": "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
+    "authors": [
+      "Le Chen",
+      "Zishen Wan",
+      "Baixi Sun",
+      "Xiaolong Ma",
+      "Chih-Hsuan Yang",
+      "Feng Yan",
+      "Sheng Di",
+      "Franck Cappello",
+      "Rajeev Thakur"
+    ],
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.31057v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Working Memory Evaluation",
+    "categories": [
+      "context",
+      "evaluation"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Separates instructions, artifacts, tool outputs, and generated state when studying coding-agent context. It evaluates compression and retrieval policies while distinguishing stored state from delivered context and management overhead.",
+    "representation": "Semantically typed working-memory objects",
+    "lifecycle": {
+      "write": "Retain objects from archived coding trajectories",
+      "retrieve": "Object-aware retrieval or compressed context delivery",
+      "update": "Object-aware compression policies",
+      "forget": "Retention and compression differ by object type"
+    },
+    "evaluation": "55 archived coding-agent trajectories and real-system replay",
+    "limitations": "Calibration improvements may not transfer to held-out tasks; equal nominal budgets do not imply equal delivered context.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.31057v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.31057v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "f3dc0ca6c8bb86721ef0b6b0f5c1aa8bf5b76fb4e1ae46eb0c594099a3d159b6",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Working context & summaries",
+    "storageCategories": [
+      "records",
+      "context"
+    ]
+  },
+  {
+    "id": "2602.21611",
+    "version": "v1",
+    "title": "Structurally Aligned Subtask-Level Memory for Software Engineering Agents",
+    "authors": [
+      "Kangning Shen",
+      "Jingyuan Zhang",
+      "Chenxi Sun",
+      "Wencong Zeng",
+      "Yang Yue"
+    ],
+    "published": "2026-02-25",
+    "updated": "2026-02-25",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2602.21611v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Subtask Memory",
+    "categories": [
+      "experience",
+      "context"
+    ],
+    "stages": [
+      "explore",
+      "plan",
+      "debug",
+      "test"
+    ],
+    "summary": "Aligns stored experience with functional subtasks rather than entire issues. This addresses cases where similar issue descriptions need different reasoning at individual workflow stages.",
+    "representation": "Experience records aligned with functional software subtasks",
+    "lifecycle": {
+      "write": "Store memories at subtask granularity",
+      "retrieve": "Retrieve experience for the current functional stage",
+      "update": "Updates follow the agent functional decomposition",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified across multiple model backbones",
+    "limitations": "Workflow-stage alignment depends on the agent decomposition; headline issue similarity can be misleading.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2602.21611v1",
+    "evidenceUrl": "https://arxiv.org/abs/2602.21611v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.662Z",
+    "abstractHash": "46164885796c2de7bffcfef079054abf000b731a9d1d6410daac92298420c74a",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.20664",
+    "version": "v1",
+    "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+    "authors": [
+      "Sarthak Singh"
+    ],
+    "published": "2026-08-21",
+    "updated": "2026-08-21",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.20664v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "DreamBench-SWE",
+    "categories": [
+      "evaluation",
+      "governance"
+    ],
+    "stages": [
+      "code",
+      "test",
+      "maintain"
+    ],
+    "summary": "Evaluates memory hygiene across software sessions whose later tasks require evidence from earlier sessions. Hidden executable checks distinguish remembered facts from successful software outcomes.",
+    "representation": "Multi-session event memories and typed-plus-raw reference records",
+    "lifecycle": {
+      "write": "Retain evidence from earlier sessions",
+      "retrieve": "Later sessions need non-inferable prior evidence",
+      "update": "Not specified in the abstract",
+      "forget": "Memory hygiene is evaluated; a general forgetting method is not established"
+    },
+    "evaluation": "Multi-session software tasks with hidden executable oracles",
+    "limitations": "The audit does not establish broad product superiority or a causal external-memory mechanism.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.20664v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.20664v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "2cdd0a589706519648ac745209ca2fc5962a86be2a14e5f37339429f6fe8f821",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Event & interaction histories",
+    "storageCategories": [
+      "records",
+      "histories"
+    ]
+  },
+  {
+    "id": "2507.06229",
+    "version": "v5",
+    "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+    "authors": [
+      "Xiangru Tang",
+      "Tianrui Qin",
+      "Tianhao Peng",
+      "Ziyang Zhou",
+      "Daniel Shao",
+      "Tingting Du",
+      "Xinming Wei",
+      "Peng Xia",
+      "Fang Wu",
+      "He Zhu",
+      "Ge Zhang",
+      "Jiaheng Liu",
+      "Xingyao Wang",
+      "Sirui Hong",
+      "Chenglin Wu",
+      "Hao Cheng",
+      "Chi Wang",
+      "Wangchunshu Zhou"
+    ],
+    "published": "2025-07-08",
+    "updated": "2025-10-27",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2507.06229v5",
+    "metadataSource": "arXiv Atom API",
+    "short": "Agent KB",
+    "categories": [
+      "experience",
+      "collaboration"
+    ],
+    "stages": [
+      "plan",
+      "debug",
+      "reflect"
+    ],
+    "summary": "Collects experience from multiple agent frameworks into a reusable knowledge base. Retrieval supplies plans and diagnostic fixes, with a disagreement gate intended to reduce interference from mismatched advice.",
+    "representation": "Structured cross-framework trajectory knowledge base",
+    "lifecycle": {
+      "write": "Aggregate experience from heterogeneous agent frameworks",
+      "retrieve": "Hybrid retrieval for planning and feedback-driven fixes",
+      "update": "Automatically generated experiences populate the knowledge base",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Multiple agent benchmarks including SWE-bench with OpenHands",
+    "limitations": "Cross-domain results and different pass metrics must be kept separate.",
+    "setting": "cross-framework",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2507.06229v5",
+    "evidenceUrl": "https://arxiv.org/abs/2507.06229v5",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "5b4192d34df9b38dcaa21813e127cc2a892a449b762390865949b54edfb57c1a",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2604.14004",
+    "version": "v1",
+    "title": "Memory Transfer Learning: How Memories are Transferred Across Domains in Coding Agents",
+    "authors": [
+      "Kangsan Kim",
+      "Minki Kang",
+      "Taeil Kim",
+      "Yanlai Yang",
+      "Mengye Ren",
+      "Sung Ju Hwang"
+    ],
+    "published": "2026-04-15",
+    "updated": "2026-04-15",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2604.14004v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Memory Transfer Learning",
+    "categories": [
+      "experience",
+      "skills",
+      "evaluation"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "test",
+      "reflect"
+    ],
+    "summary": "Compares concrete traces with abstract insights in a shared pool of coding experience. The study finds that transferable validation knowledge can help across domains, while overly specific traces can hurt.",
+    "representation": "Unified memory pool with four representations from traces to insights",
+    "lifecycle": {
+      "write": "Accumulate experience from heterogeneous coding domains",
+      "retrieve": "Transfer memory across coding tasks and model backbones",
+      "update": "Pool size and abstraction level are experimental variables",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Six coding benchmarks",
+    "limitations": "Low-level traces can produce negative transfer; average gains hide domain-specific differences.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2604.14004v1",
+    "evidenceUrl": "https://arxiv.org/abs/2604.14004v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "6f72e04cf31c25b6c54b1e7e083f369da24bd9098a95178cb6ea9572c8890bea",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2605.25430",
+    "version": "v1",
+    "title": "CODESKILL: Learning Self-Evolving Skills for Coding Agents",
+    "authors": [
+      "Yanzhou Li",
+      "Yiran Zhang",
+      "Xiaoyu Zhang",
+      "Xiaoxia Liu",
+      "Yang Liu"
+    ],
+    "published": "2026-05-25",
+    "updated": "2026-05-25",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.25430v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "CODESKILL",
+    "categories": [
+      "skills",
+      "governance",
+      "experience"
+    ],
+    "stages": [
+      "code",
+      "test",
+      "reflect"
+    ],
+    "summary": "Learns how to extract and maintain coding skills from agent trajectories. A policy balances skill quality with executable downstream feedback to keep a compact bank of procedures.",
+    "representation": "Multi-granularity procedural skill bank",
+    "lifecycle": {
+      "write": "Extract skills from coding trajectories",
+      "retrieve": "Stored procedures guide future software tasks",
+      "update": "A learned management policy evolves and maintains skills",
+      "forget": "Compact bank maintenance is reported; exact deletion behavior needs full-text review"
+    },
+    "evaluation": "EnvBench, SWE-bench Verified, and Terminal-Bench 2",
+    "limitations": "Requires management-policy training and verifiable feedback from a frozen downstream agent.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.25430v1",
+    "evidenceUrl": "https://arxiv.org/abs/2605.25430v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "522e5896cb63c6e681f94ddcafba9cc96d9c7fb23af03117b27765ef827e4b59",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Experience & skill banks",
+    "storageCategories": [
+      "banks"
+    ]
+  },
+  {
+    "id": "2601.07190",
+    "version": "v1",
+    "title": "Active Context Compression: Autonomous Memory Management in LLM Agents",
+    "authors": [
+      "Nikhil Verma"
+    ],
+    "published": "2026-01-12",
+    "updated": "2026-01-12",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2601.07190v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Focus / Active Compression",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "code",
+      "debug"
+    ],
+    "summary": "Lets a coding agent consolidate important findings into a retained knowledge block and remove raw history. The reported pilot tests autonomous compression on a small set of context-heavy repair tasks.",
+    "representation": "Persistent knowledge block plus prunable interaction history",
+    "lifecycle": {
+      "write": "Agent consolidates key findings during exploration",
+      "retrieve": "Retained knowledge is used after history pruning",
+      "update": "Agent-triggered consolidation",
+      "forget": "Actively prune raw interaction history"
+    },
+    "evaluation": "Five context-intensive SWE-bench Lite instances",
+    "limitations": "Very small evaluation: the findings do not establish broad accuracy equivalence or general token savings.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2601.07190v1",
+    "evidenceUrl": "https://arxiv.org/abs/2601.07190v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "7bac68efba10c0489036e2d2f5054a307f8aba65036affa74d644a230b555acd",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Working context & summaries",
+    "storageCategories": [
+      "notes",
+      "context"
+    ]
+  },
+  {
+    "id": "2604.23069",
+    "version": "v1",
+    "title": "ContextWeaver: Selective and Dependency-Structured Memory Construction for LLM Agents",
+    "authors": [
+      "Yating Wu",
+      "Yuhao Zhang",
+      "Sayan Ghosh",
+      "Sourya Basu",
+      "Anoop Deoras",
+      "Jun Huan",
+      "Gaurav Gupta"
+    ],
+    "published": "2026-04-24",
+    "updated": "2026-04-24",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2604.23069v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "ContextWeaver",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Builds a dependency graph over reasoning steps and selects context through those relationships. Summarized dependency paths and execution feedback aim to retain information needed by later actions.",
+    "representation": "Dependency graph of interaction and reasoning steps",
+    "lifecycle": {
+      "write": "Construct links from each step to the earlier evidence it depends on",
+      "retrieve": "Traverse dependencies to select relevant context",
+      "update": "Condense paths into reusable units and validate with execution feedback",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified and Lite",
+    "limitations": "Comparison against sliding windows does not isolate every contribution of graph construction, summaries, and validation.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2604.23069v1",
+    "evidenceUrl": "https://arxiv.org/abs/2604.23069v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "e54c084099b55bfa8abf835407b36e4a33ecf0d3607ab29ead9c96900f1c1757",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Linked knowledge",
+    "storageCategories": [
+      "histories",
+      "graphs"
+    ]
+  },
+  {
+    "id": "2512.22087",
+    "version": "v1",
+    "title": "Context as a Tool: Context Management for Long-Horizon SWE-Agents",
+    "authors": [
+      "Shukai Liu",
+      "Jian Yang",
+      "Bo Jiang",
+      "Yizhi Li",
+      "Jinyang Guo",
+      "Xianglong Liu",
+      "Bryan Dai"
+    ],
+    "published": "2025-12-26",
+    "updated": "2025-12-26",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2512.22087v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "CAT / SWE-Compressor",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "debug"
+    ],
+    "summary": "Treats context maintenance as a tool the software agent can invoke. A structured workspace keeps task meaning, condensed history, and recent interactions, while training teaches milestone-based compression.",
+    "representation": "Stable task semantics, condensed long-term history, recent interactions",
+    "lifecycle": {
+      "write": "Proactively compress trajectories into actionable summaries",
+      "retrieve": "Use the structured workspace for subsequent agent decisions",
+      "update": "Callable context actions at appropriate task milestones",
+      "forget": "Compression reduces retained history; precise deletion rules need full-text review"
+    },
+    "evaluation": "SWE-bench Verified",
+    "limitations": "Long-term memory here describes retained episode context; cross-task persistence is not established by the abstract.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2512.22087v1",
+    "evidenceUrl": "https://arxiv.org/abs/2512.22087v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.663Z",
+    "abstractHash": "454cfc241e5cf1f4f26335da532dbebe619d00c005e281fcc98936fb9b160c73",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Working context & summaries",
+    "storageCategories": [
+      "histories",
+      "context"
+    ]
+  },
+  {
+    "id": "2512.10398",
+    "version": "v6",
+    "title": "Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases",
+    "authors": [
+      "Sherman Wong",
+      "Zhenting Qi",
+      "Zhaodong Wang",
+      "Nathan Hu",
+      "Samuel Lin",
+      "Jun Ge",
+      "Erwin Gao",
+      "Wenlin Chen",
+      "Yilun Du",
+      "Minlan Yu",
+      "Ying Zhang"
+    ],
+    "published": "2025-12-11",
+    "updated": "2026-02-03",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2512.10398v6",
+    "metadataSource": "arXiv Atom API",
+    "short": "Confucius Code Agent",
+    "categories": [
+      "context",
+      "repository",
+      "experience"
+    ],
+    "stages": [
+      "explore",
+      "code",
+      "test",
+      "reflect"
+    ],
+    "summary": "Combines long-session context management with persistent notes for learning across sessions. Its scaffolding separates orchestration, memory, and tool extensions for large codebases.",
+    "representation": "Managed working context and persistent cross-session notes",
+    "lifecycle": {
+      "write": "A persistent note-taking system retains learning",
+      "retrieve": "Notes and managed context support continued software work",
+      "update": "Cross-session continual learning is supported",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Pro",
+    "limitations": "The reported system has several components; overall performance does not isolate the causal effect of memory.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2512.10398v6",
+    "evidenceUrl": "https://arxiv.org/abs/2512.10398v6",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "1c1841280acaa56b4f7a9afb7a75068f5dcc37599a5357b312bcb9d7bb17ce47",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Working context & summaries",
+    "storageCategories": [
+      "notes",
+      "context"
+    ]
+  },
+  {
+    "id": "2510.21903",
+    "version": "v2",
+    "title": "TOM-SWE: User Mental Modeling For Software Engineering Agents",
+    "authors": [
+      "Xuhui Zhou",
+      "Valerie Chen",
+      "Zora Zhiruo Wang",
+      "Graham Neubig",
+      "Maarten Sap",
+      "Xingyao Wang"
+    ],
+    "published": "2025-10-24",
+    "updated": "2026-01-29",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2510.21903v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "ToM-SWE",
+    "categories": [
+      "collaboration",
+      "repository"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "maintain"
+    ],
+    "summary": "Pairs a coding agent with a partner that tracks the developer’s goals, constraints, and preferences. Persistent user memory helps interpret ambiguous instructions and carry intent across interactions.",
+    "representation": "Persistent user model derived from instructions and interaction history",
+    "lifecycle": {
+      "write": "Infer user goals, constraints, and preferences from interactions",
+      "retrieve": "Partner agent supplies user-related suggestions to the coding agent",
+      "update": "Maintain the user model across interactions",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Ambiguous and stateful SWE-bench plus a developer study",
+    "limitations": "Customized benchmarks and user satisfaction results should not be compared directly with standard SWE-bench.",
+    "setting": "multi-agent",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2510.21903v2",
+    "evidenceUrl": "https://arxiv.org/abs/2510.21903v2",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "75c822ffd136423ab9f8dd57516a107033e46bb8e1bf21cb13213a832f7ddfad",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Working context & summaries",
+    "storageCategories": [
+      "records",
+      "context"
+    ]
+  },
+  {
+    "id": "2608.21867",
+    "version": "v1",
+    "title": "MemGuard: Persisting Verifier Signals for LLM-Agent Memory Governance",
+    "authors": [
+      "Haoyu Wang",
+      "Guangyuan Dong",
+      "He Liang",
+      "Zijing Zhang",
+      "Jiachen Luo",
+      "Chuang Liu",
+      "Chao Xue",
+      "Hao Tang"
+    ],
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.21867v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "MemGuard",
+    "categories": [
+      "governance",
+      "experience"
+    ],
+    "stages": [
+      "code",
+      "test",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Attaches verifier-derived confidence and uncertainty to candidate experiences. These signals persist through admission, retrieval, conflict handling, summarization, and archival instead of serving only as a one-time filter.",
+    "representation": "Experience records with persistent verification metadata",
+    "lifecycle": {
+      "write": "Verify candidates before activating them",
+      "retrieve": "Use persistent verifier descriptors during retrieval",
+      "update": "Resolve conflicts and summarize using verifier metadata",
+      "forget": "Archive memories as part of lifecycle governance"
+    },
+    "evaluation": "Terminal-Bench 2.0, SWE-bench Verified, and web benchmarks",
+    "limitations": "Evidence comes from a defined set of backbones and matched runtime budgets; it is not a universal guarantee.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.21867v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.21867v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "77fcf69f3c4de9eec6cc36916cc68291fbb1813dd0ed3b22ef0b59cad42334fd",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2609.20130",
+    "version": "v1",
+    "title": "AdaRepair-Mem: Adaptive Experience Orchestration for Repository-Level Program Repair",
+    "authors": [
+      "Z. C. Luo",
+      "J. C. Guo",
+      "W. J. He",
+      "S. Y. Wang",
+      "J. C. Yu",
+      "F. M. Zhao",
+      "Y. Chen",
+      "T. Cao",
+      "L. Q. Liu",
+      "N. Zheng",
+      "W. Xu",
+      "J. Jiang",
+      "Z. M. Zhao"
+    ],
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2609.20130v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "AdaRepair-Mem",
+    "categories": [
+      "experience",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "debug",
+      "test",
+      "reflect"
+    ],
+    "summary": "Routes repair experience by workflow stage and adjusts retrieval for repositories with sparse history. Selection considers relevance, utility, specificity, and redundancy instead of simply increasing memory volume.",
+    "representation": "Repair experiences organized by repository and repair phase",
+    "lifecycle": {
+      "write": "Not specified in the abstract",
+      "retrieve": "Coverage-aware fallback with quality-aware selection and stage-aware routing",
+      "update": "Not specified in the abstract",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Lite and Verified",
+    "limitations": "Benefits depend on memory coverage and repair phase; more memory is not monotonically better.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2609.20130v1",
+    "evidenceUrl": "https://arxiv.org/abs/2609.20130v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "912ef3a4081abe531a99a4b47081174babb649fc733d4c23a3454069314c49d1",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2609.07357",
+    "version": "v1",
+    "title": "EnvPilot: Systematic Design and Evaluation of an Experience-Augmented Agent for Software Environment Setup",
+    "authors": [
+      "Hanwu Chen",
+      "Hanyu Lin",
+      "Zhanjiang Yang",
+      "Linhao Zhang",
+      "Aoyan Li",
+      "Jinxi Li",
+      "Meng Li",
+      "Yin Chen",
+      "Daoguang Zan"
+    ],
+    "published": "2026-09-07",
+    "updated": "2026-09-07",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2609.07357v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "EnvPilot",
+    "categories": [
+      "experience",
+      "skills"
+    ],
+    "stages": [
+      "explore",
+      "plan",
+      "test"
+    ],
+    "summary": "Converts prior environment-setup trajectories into structured guidance. Context-aware retrieval supplies validated setup strategies for new repositories and programming ecosystems.",
+    "representation": "Expandable trajectory-derived setup memory",
+    "lifecycle": {
+      "write": "Transform historical execution traces into structured experiences",
+      "retrieve": "Context-aware retrieval during environment setup",
+      "update": "Expand the trajectory-derived memory",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "AES-Bench: 112 GitHub instances across nine languages",
+    "limitations": "Environment setup success is distinct from code-patch correctness.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2609.07357v1",
+    "evidenceUrl": "https://arxiv.org/abs/2609.07357v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "4ffc72d6bb324e32726d13c5cb0e2b4d8509b205b4e6cecf1c45c33c73fdb390",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2609.05510",
+    "version": "v1",
+    "title": "Memory as Infrastructure: Reliability Engineering for Persistent Agent Memory in Months-Long LLM-Assisted Development",
+    "authors": [
+      "Mike Helwig"
+    ],
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2609.05510v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "SIx Harness",
+    "categories": [
+      "repository",
+      "governance",
+      "evaluation"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Treats persistent project memory as operational infrastructure. Local retrieval, decision and dead-end stores, session-start health checks, and failure telemetry support a months-long coding project.",
+    "representation": "Local SQLite memory and compaction-resistant decision stores",
+    "lifecycle": {
+      "write": "Capture project knowledge and failed approaches",
+      "retrieve": "Hybrid lexical-vector retrieval with precision-gated injection",
+      "update": "Health gates and telemetry monitor memory continuity",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Instrumented months-long software development deployment",
+    "limitations": "Single self-reported project with no control arm; operational reliability does not establish a causal coding improvement.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2609.05510v1",
+    "evidenceUrl": "https://arxiv.org/abs/2609.05510v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "7a23c5d5606e383491e3f11a553f31df018180d68f5bd10b277b95c28ca898b5",
+    "storageFormats": [
+      "sqlite"
+    ],
+    "storageEvidence": [
+      {
+        "formats": [
+          "sqlite"
+        ],
+        "sourceUrl": "https://arxiv.org/abs/2609.05510v1",
+        "locator": "Abstract",
+        "note": "Per-project long-term memory uses hybrid lexical-vector retrieval over SQLite; the database extension is not specified.",
+        "reviewStatus": "Agent source-check complete; human review pending"
+      }
+    ],
+    "storageSearchText": "SQLite Structured records Databases & search indexes",
+    "storageCategories": [
+      "records",
+      "backends"
+    ]
+  },
+  {
+    "id": "2608.20685",
+    "version": "v1",
+    "title": "Temporal Validity on Real Software Histories: Eliminating Stale-Fact Errors in Code-Assistant Memory over GitHub Fixes",
+    "authors": [
+      "Neeraj Yadav"
+    ],
+    "published": "2026-08-21",
+    "updated": "2026-08-21",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.20685v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "MemStrata / Temporal Validity",
+    "categories": [
+      "repository",
+      "governance",
+      "evaluation"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "maintain"
+    ],
+    "summary": "Tracks which retained software facts have been superseded by repository changes. A deterministic relation-based memory distinguishes current values from stale ones when similar facts compete in retrieval.",
+    "representation": "Subject-relation-object facts with temporal supersession",
+    "lifecycle": {
+      "write": "Extract clean value transitions from GitHub fixes",
+      "retrieve": "Answer with the current fact",
+      "update": "New facts supersede older values",
+      "forget": "Exclude superseded values from current answers"
+    },
+    "evaluation": "130 atomic state transitions from SWE-bench histories",
+    "limitations": "Only clean atomic transitions are evaluated; broader software changes remain outside reported coverage.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.20685v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.20685v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.664Z",
+    "abstractHash": "b0e02b54d468dbba084a152cf1026c40363488ffe0f4446c6f61e976c5f097d6",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Linked knowledge",
+    "storageCategories": [
+      "records",
+      "graphs"
+    ]
+  },
+  {
+    "id": "2608.09181",
+    "version": "v1",
+    "title": "Memoir: Learning, Verifying, and Evolving False-Positive Memories for Static Application Security Testing Tools",
+    "authors": [
+      "Shenyuan Guan",
+      "Qiaodan Hou",
+      "Yanjun Chen",
+      "Xincheng Wen",
+      "Jia Feng",
+      "Keke Lian",
+      "Cuiyun Gao"
+    ],
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.09181v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Memoir",
+    "categories": [
+      "experience",
+      "governance",
+      "skills"
+    ],
+    "stages": [
+      "review",
+      "test",
+      "reflect"
+    ],
+    "summary": "Builds reusable memories from historical false-positive security alerts. Retrieved patterns undergo semantic checks before classification, and verified predictions feed the memory repository.",
+    "representation": "Structured semantic memories of false-positive alert patterns",
+    "lifecycle": {
+      "write": "Annotate and cluster alerts, then synthesize memories",
+      "retrieve": "Retrieve patterns and check security invariants",
+      "update": "Incorporate verified predictions",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "CWE-Bench-Java and an industrial SAST case study",
+    "limitations": "Security alert classification is a specialized software workflow, not a general issue-repair benchmark.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.09181v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.09181v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "7cbbdd69cd31ace13dad581f73ca854ed5e15401b057eac55c803885bd92623e",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records",
+    "storageCategories": [
+      "records"
+    ]
+  },
+  {
+    "id": "2608.06811",
+    "version": "v1",
+    "title": "Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution",
+    "authors": [
+      "Jiahao Zhang",
+      "Yifan Zhang",
+      "Yu Huang"
+    ],
+    "published": "2026-08-07",
+    "updated": "2026-08-07",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.06811v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "PMCoder",
+    "categories": [
+      "experience",
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "plan",
+      "debug",
+      "test"
+    ],
+    "summary": "Couples a hierarchical repair planner with episodic memory. The active phase conditions retrieval, while memory statistics detect repeated failures and trigger replanning; execution verdicts ground verification.",
+    "representation": "Episodic observations coupled to a hierarchical phase plan",
+    "lifecycle": {
+      "write": "Retain observations and trajectory statistics",
+      "retrieve": "Condition retrieval on the current plan phase",
+      "update": "Memory statistics trigger stuck detection and replanning",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified and a TerminalWorld sample",
+    "limitations": "Effects of the coupled planner and memory can depend on the surrounding harness.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.06811v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.06811v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "febf643f0a512a845134c9404ff2da1e2f67928e86304e00e72b2b7e7fc5183f",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Event & interaction histories",
+    "storageCategories": [
+      "records",
+      "histories"
+    ]
+  },
+  {
+    "id": "2608.04278",
+    "version": "v1",
+    "title": "EA-Graph: Artifact-Anchored Verification Memory for Coding Agents under Upstream Drift",
+    "authors": [
+      "Hwai-Jung Hsu",
+      "Cheng-Jan Chi",
+      "Hanna Everett"
+    ],
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.04278v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "EA-Graph",
+    "categories": [
+      "repository",
+      "governance",
+      "evaluation"
+    ],
+    "stages": [
+      "review",
+      "test",
+      "maintain"
+    ],
+    "summary": "Anchors verification claims to the precise artifacts that supported them. After upstream changes, it separates unaffected, affected, and unprovable claims rather than treating old prose notes as current evidence.",
+    "representation": "Artifact-level claim graph with content anchors and freshness",
+    "lifecycle": {
+      "write": "Record claims with supporting artifact content",
+      "retrieve": "Resolve aliases and inspect claim dependencies",
+      "update": "Reassess claims when supporting content changes",
+      "forget": "Mark unavailable replacement evidence as unprovable"
+    },
+    "evaluation": "Generated repositories with known artifact ground truth",
+    "limitations": "Controlled testbed supports provability judgments; the paper does not establish repair quality or efficiency gains.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.04278v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.04278v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "f8690a24d400abf4b53218cb3060ac592cd5e23b5ec863909c00cc0edbb7cafd",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Linked knowledge",
+    "storageCategories": [
+      "graphs"
+    ]
+  },
+  {
+    "id": "2608.00122",
+    "version": "v1",
+    "title": "Shared Organizational Memory for Enterprise Coding Agents: System Design and Deployment Snapshot",
+    "authors": [
+      "Harsh Rao Dhanyamraju",
+      "Leonidas Raghav"
+    ],
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.00122v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Organizational Memory",
+    "categories": [
+      "collaboration",
+      "experience",
+      "governance"
+    ],
+    "stages": [
+      "code",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Captures development experience at the platform level with contributor approval. Curated question-answer memories are shared with future coding agents after security and privacy gates.",
+    "representation": "Shared organizational question-answer experience memory",
+    "lifecycle": {
+      "write": "Capture approved task-adjacent experience",
+      "retrieve": "Retrieve organizational knowledge for future agents",
+      "update": "Curate captured experience into reusable records",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Ongoing enterprise deployment snapshot",
+    "limitations": "Retrieval and coding-task effects remain under evaluation.",
+    "setting": "cross-framework",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.00122v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.00122v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "e1bd9334c2496de761a3f738afe268b0b4c00a2a495d4e38110da429e2f73d9c",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2607.20972",
+    "version": "v1",
+    "title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+    "authors": [
+      "Swapnanil Saha"
+    ],
+    "published": "2026-07-23",
+    "updated": "2026-07-23",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2607.20972v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Cue-Anchored Memory",
+    "categories": [
+      "context",
+      "repository",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "code",
+      "debug",
+      "maintain"
+    ],
+    "summary": "Associates operational memories with path, symbol, semantic, event, and temporal cues. The harness injects matching facts deterministically so delivery does not depend on agents choosing to consult a store.",
+    "representation": "Operational facts with composable trigger conditions",
+    "lifecycle": {
+      "write": "Incidentally encode situational knowledge during work",
+      "retrieve": "Harness evaluates cues and injects matching memories",
+      "update": "Preserve continuity across compactions",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Controlled coding task and repeated-compaction probes",
+    "limitations": "Narrow operational probes do not establish general repair-performance improvements.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2607.20972v1",
+    "evidenceUrl": "https://arxiv.org/abs/2607.20972v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "a39015080a4a4660703feded6f82c8b76e159041d7d18b696441e0f6b8c78b61",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records",
+    "storageCategories": [
+      "records"
+    ]
+  },
+  {
+    "id": "2607.14390",
+    "version": "v1",
+    "title": "Why Git Is the Memory Solution for the Agentic Development Lifecycle",
+    "authors": [
+      "Frank Guo"
+    ],
+    "published": "2026-07-15",
+    "updated": "2026-07-15",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2607.14390v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Git-Bound Memory",
+    "categories": [
+      "repository",
+      "governance",
+      "experience"
+    ],
+    "stages": [
+      "explore",
+      "plan",
+      "review",
+      "maintain"
+    ],
+    "summary": "Links coding-session reasoning to commits. A query router separates structural lookups, confidence-gated episodes, and decision rationale, using repository history and review to govern memory freshness.",
+    "representation": "Git-linked session ledger, structural map, and decision synthesis",
+    "lifecycle": {
+      "write": "Capture reasoning and link sessions to commits",
+      "retrieve": "Route queries to maps, episodes, or rationale synthesis",
+      "update": "Rebuild from commit-linked history",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Eight-corpus retrieval study and developer-question evaluation",
+    "limitations": "Retrieval rankings and answer sufficiency measure different outcomes; reported results are corpus-specific.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2607.14390v1",
+    "evidenceUrl": "https://arxiv.org/abs/2607.14390v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "dede2d908db5c51497831ae439395ef2fbe016ad80539361904c28217f1205a0",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Event & interaction histories",
+    "storageCategories": [
+      "notes",
+      "histories"
+    ]
+  },
+  {
+    "id": "2607.01916",
+    "version": "v6",
+    "title": "ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair",
+    "authors": [
+      "Chiwang Luk",
+      "Matin Mohammad Najafi",
+      "Zhifeng Jia",
+      "Wei Yang",
+      "Xiuchang Li",
+      "Jinwei Zhu",
+      "Yang Ren",
+      "Lei Chen",
+      "Gao Cong"
+    ],
+    "published": "2026-07-02",
+    "updated": "2026-09-14",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2607.01916v6",
+    "metadataSource": "arXiv Atom API",
+    "short": "ContextSniper",
+    "categories": [
+      "context",
+      "repository",
+      "experience"
+    ],
+    "stages": [
+      "explore",
+      "debug",
+      "test"
+    ],
+    "summary": "Indexes code and action memory at multiple levels, retrieves compact evidence packets, and filters tool output according to intent. Original source remains recoverable when a repair agent needs detail.",
+    "representation": "Three-level code and action memory with recoverable source",
+    "lifecycle": {
+      "write": "Index code and action evidence",
+      "retrieve": "Hybrid ranking with an intention-aware gate",
+      "update": "Not specified in the abstract",
+      "forget": "Filter delivered context while preserving recoverable source"
+    },
+    "evaluation": "Matched 50-task comparisons on SWE-bench Lite and Pro",
+    "limitations": "One-task resolution differences do not establish broad accuracy equivalence.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2607.01916v6",
+    "evidenceUrl": "https://arxiv.org/abs/2607.01916v6",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "fb64b4697c7a57f6ce4e721cdc7a8619d45f9762666eeb3e62a394390bc24ead",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Working context & summaries",
+    "storageCategories": [
+      "records",
+      "context"
+    ]
+  },
+  {
+    "id": "2606.23752",
+    "version": "v1",
+    "title": "ESAA-Conversational: An Event-Sourced Memory Layer for Continuity, Handoff, and Curation Across Heterogeneous LLM Coding Agents",
+    "authors": [
+      "Elzo Brito dos Santos Filho"
+    ],
+    "published": "2026-06-22",
+    "updated": "2026-06-22",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2606.23752v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "ESAA-Conversational",
+    "categories": [
+      "collaboration",
+      "repository",
+      "governance"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Normalizes conversations from different coding assistants into an append-only event log. Deterministic projections produce handoff notes, task lists, and decisions; agents explicitly curate durable knowledge.",
+    "representation": "Shared event store with projected handoff and task records",
+    "lifecycle": {
+      "write": "Hooks capture turns; explicit commands curate decisions",
+      "retrieve": "Read deterministic projections for handoff",
+      "update": "Append events and rebuild projections",
+      "forget": "Public distributions omit private history"
+    },
+    "evaluation": "Self-referential development-lab case study",
+    "limitations": "Demonstrates integration feasibility rather than controlled productivity improvement.",
+    "setting": "cross-framework",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2606.23752v1",
+    "evidenceUrl": "https://arxiv.org/abs/2606.23752v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "5b0d9faf09638438b0c5b7efab73a02372ced80dcaec29fc9164076145cf8d15",
+    "storageFormats": [
+      "md",
+      "json",
+      "jsonl"
+    ],
+    "storageEvidence": [
+      {
+        "formats": [
+          "md",
+          "json",
+          "jsonl"
+        ],
+        "sourceUrl": "https://arxiv.org/abs/2606.23752v1",
+        "locator": "Abstract",
+        "note": "The event store is activity.jsonl; projections include handoff.md, state.md, decisions.md, and tasks.json.",
+        "reviewStatus": "Agent source-check complete; human review pending"
+      }
+    ],
+    "storageSearchText": ".md — Markdown .json — JSON .jsonl — JSON Lines Notes & documents Structured records Event & interaction histories",
+    "storageCategories": [
+      "notes",
+      "records",
+      "histories"
+    ]
+  },
+  {
+    "id": "2606.12329",
+    "version": "v1",
+    "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+    "authors": [
+      "Ripon Chandra Malo",
+      "Tong Qiu"
+    ],
+    "published": "2026-06-10",
+    "updated": "2026-06-10",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2606.12329v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "PROJECTMEM",
+    "categories": [
+      "repository",
+      "governance",
+      "experience"
+    ],
+    "stages": [
+      "plan",
+      "debug",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Records issues, attempts, fixes, decisions, and notes as typed events. Compact projections supply project context, while a pre-action gate warns about repeated failed fixes and fragile files.",
+    "representation": "Append-only project event log and deterministic summaries",
+    "lifecycle": {
+      "write": "Record typed development events",
+      "retrieve": "Serve compact projections through MCP",
+      "update": "Append events and update read projections",
+      "forget": "Immutable log; deletion is not described"
+    },
+    "evaluation": "Two-month self-study across ten projects",
+    "limitations": "Self-study and estimated context costs do not establish general causal benefits.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2606.12329v1",
+    "evidenceUrl": "https://arxiv.org/abs/2606.12329v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "f634983936875155805adc711be0aa8bfcae5fcdf0eedf036f5601d40f0d7d2c",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Event & interaction histories",
+    "storageCategories": [
+      "notes",
+      "histories"
+    ]
+  },
+  {
+    "id": "2606.08151",
+    "version": "v4",
+    "title": "Decision-Aware Memory Cards: Counterfactual-Inspired Context Selection and Compression for Tool-Using LLM Agents",
+    "authors": [
+      "Xinyu Guan",
+      "Qianyang Zhao",
+      "Yuming Deng"
+    ],
+    "published": "2026-06-06",
+    "updated": "2026-09-21",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2606.08151v4",
+    "metadataSource": "arXiv Atom API",
+    "short": "Decision-Aware Cards",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "plan",
+      "debug"
+    ],
+    "summary": "Selects files, tests, traces, and rules for their expected effect on the next action. An instance graph supports utility ranking, and chosen evidence becomes compact typed memory cards.",
+    "representation": "Instance context graph and typed evidence cards",
+    "lifecycle": {
+      "write": "Compress selected evidence into cards",
+      "retrieve": "Rank evidence by decision-oriented utility",
+      "update": "Not specified in the abstract",
+      "forget": "Exclude low-utility context from delivered cards"
+    },
+    "evaluation": "50 SWE-bench Verified file-retrieval instances and diagnostics",
+    "limitations": "Retrieval and context savings do not establish end-to-end patch correctness.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2606.08151v4",
+    "evidenceUrl": "https://arxiv.org/abs/2606.08151v4",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "84e30b077ad85f0928c16194fc09adcc8261aa2b96a95d7b74cb294c0098ca90",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Linked knowledge",
+    "storageCategories": [
+      "records",
+      "graphs"
+    ]
+  },
+  {
+    "id": "2605.30842",
+    "version": "v1",
+    "title": "CoMem: Context Management with A Decoupled Long-Context Model",
+    "authors": [
+      "Yuwei Zhang",
+      "Chengyu Dong",
+      "Shuowei Jin",
+      "Changlong Yu",
+      "Hejie Cui",
+      "Hongye Jin",
+      "Xinyang Zhang",
+      "Hamed Bonab",
+      "Colin Lockard",
+      "Jianshu Chen",
+      "Zhenyu Shi",
+      "Jingbo Shang",
+      "Xian Li",
+      "Bing Yin"
+    ],
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.30842v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "CoMem",
+    "categories": [
+      "context",
+      "collaboration"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Separates the coding agent from a trained memory model that summarizes history asynchronously. Overlapping memory processing with inference aims to reduce latency while preserving decision context.",
+    "representation": "Summaries from a decoupled long-context memory model",
+    "lifecycle": {
+      "write": "Summarize previous interactions",
+      "retrieve": "Consume asynchronously delivered summaries",
+      "update": "Update summaries through a k-step-off pipeline",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified and throughput experiments",
+    "limitations": "Asynchronous memory can lag the task; tradeoffs depend on compression training and serving conditions.",
+    "setting": "multi-agent",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.30842v1",
+    "evidenceUrl": "https://arxiv.org/abs/2605.30842v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "f446915d677440cede9ace317ae12214c445f58425ee59f032cd9bbeb4c0b863",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Working context & summaries",
+    "storageCategories": [
+      "notes",
+      "context"
+    ]
+  },
+  {
+    "id": "2605.17444",
+    "version": "v1",
+    "title": "MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair",
+    "authors": [
+      "Simiao Liu",
+      "Li Zhang",
+      "Fang Liu",
+      "Xiaoli Lian",
+      "Yang Liu",
+      "Yinghao Zhu"
+    ],
+    "published": "2026-05-17",
+    "updated": "2026-05-17",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.17444v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "MemRepair",
+    "categories": [
+      "experience",
+      "repository",
+      "skills"
+    ],
+    "stages": [
+      "debug",
+      "test",
+      "reflect"
+    ],
+    "summary": "Combines prior fixes, security patterns, and refinement trajectories in layered memory. Runtime feedback directs reuse of repository conventions and earlier failed-to-successful repair paths.",
+    "representation": "History-Fix, Security-Pattern, and Refinement-Trajectory memories",
+    "lifecycle": {
+      "write": "Retain fixes, defenses, and refinement experience",
+      "retrieve": "Retrieve conventions, defenses, and prior trajectories",
+      "update": "Runtime feedback drives iterative refinement",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SEC-Bench, PatchEval, and a Multi-SWE-bench C++ subset",
+    "limitations": "Specialized vulnerability-repair results differ from general software maintenance.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.17444v1",
+    "evidenceUrl": "https://arxiv.org/abs/2605.17444v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "7b087a04e4cd5076eb87718c9ce008e52a4f3bf933cf1def399efce5058c655c",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2605.14563",
+    "version": "v2",
+    "title": "Remember Your Trace: Memory-Guided Long-Horizon Agentic Framework for Consistent and Hierarchical Repository-Level Code Documentation",
+    "authors": [
+      "Suyoung Bae",
+      "Jaehoon Lee",
+      "Changkyu Choi",
+      "YunSeok Choi",
+      "Jee-Hyong Lee"
+    ],
+    "published": "2026-05-14",
+    "updated": "2026-07-10",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.14563v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "MemDocAgent",
+    "categories": [
+      "repository",
+      "context"
+    ],
+    "stages": [
+      "explore",
+      "review",
+      "maintain"
+    ],
+    "summary": "Keeps earlier documentation work in repository memory as an agent traverses dependencies. Read, write, and verification operations aim to avoid repeated retrieval and inconsistent descriptions.",
+    "representation": "RepoMemory accumulating repository documentation traces",
+    "lifecycle": {
+      "write": "Write prior documentation work traces",
+      "retrieve": "Read memory during dependency-aware traversal",
+      "update": "Verify accumulated work",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Multi-criteria repository documentation evaluation",
+    "limitations": "Documentation quality is different from executable code correctness.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.14563v2",
+    "evidenceUrl": "https://arxiv.org/abs/2605.14563v2",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "3fc189fb00e0cd8e5236ed59c78725c823e9912982879e7f62c291e0895996a1",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents",
+    "storageCategories": [
+      "notes"
+    ]
+  },
+  {
+    "id": "2605.08468",
+    "version": "v1",
+    "title": "PYTHALAB-MERA: Validation-Grounded Memory, Retrieval, and Acceptance Control for Frozen-LLM Coding Agents",
+    "authors": [
+      "Mehmet Iscan"
+    ],
+    "published": "2026-05-08",
+    "updated": "2026-05-08",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2605.08468v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "PYTHALAB-MERA",
+    "categories": [
+      "experience",
+      "skills",
+      "governance"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "test",
+      "reflect"
+    ],
+    "summary": "Places a memory-and-retrieval controller around a frozen coding model. It chooses episodic records and structural skills, validates generated files, and credits retrieval decisions through execution feedback.",
+    "representation": "Validation-grounded episodic memory and AST-derived skills",
+    "lifecycle": {
+      "write": "Retain validation outcomes and reusable knowledge",
+      "retrieve": "Controller selects records and skills for prompts",
+      "update": "Rewards and eligibility traces assign delayed credit",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Three RL coding tasks with repeated strict validations",
+    "limitations": "A small bounded study does not establish general synthesis or formal correctness.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2605.08468v1",
+    "evidenceUrl": "https://arxiv.org/abs/2605.08468v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "bec6c2dc8793f368d872d8d5c79362442a10fdae7a4a3cb98182efa465263194",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Experience & skill banks",
+    "storageCategories": [
+      "histories",
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.20342",
+    "version": "v1",
+    "title": "PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure",
+    "authors": [
+      "Myron Koch"
+    ],
+    "published": "2026-05-08",
+    "updated": "2026-05-08",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.20342v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "PrimeAgentOrchestrator",
+    "categories": [
+      "collaboration",
+      "repository",
+      "context"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "maintain"
+    ],
+    "summary": "Preloads new coding-agent sessions with briefings compiled from two memory backends. Parallel retrieval, result fusion, and file-based delivery bridge heterogeneous knowledge stores.",
+    "representation": "Compiled briefing from entity-observation and semantic memories",
+    "lifecycle": {
+      "write": "Uses existing personal stores; write policy is unspecified",
+      "retrieve": "Query stores in parallel and fuse results at session start",
+      "update": "Rebuild briefings for new sessions",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Four-month deployment experience report",
+    "limitations": "Reports tradeoffs and failure modes rather than controlled task-success gains.",
+    "setting": "cross-framework",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.20342v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.20342v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "643a53232962b8e0cad34b6f10953d9aa225a0cd073c34077902e7704920f602",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Working context & summaries",
+    "storageCategories": [
+      "records",
+      "context"
+    ]
+  },
+  {
+    "id": "2604.27283",
+    "version": "v1",
+    "title": "Learning When to Remember: Risk-Sensitive Contextual Bandits for Abstention-Aware Memory Retrieval in LLM-Based Coding Agents",
+    "authors": [
+      "Mehmet Iscan"
+    ],
+    "published": "2026-04-30",
+    "updated": "2026-04-30",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2604.27283v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Risk-Sensitive Retrieval",
+    "categories": [
+      "governance",
+      "experience"
+    ],
+    "stages": [
+      "debug",
+      "test",
+      "reflect"
+    ],
+    "summary": "Makes memory use a selective decision: inject, summarize, retrieve differently, abstain, or request feedback. A contextual bandit considers compatibility, uncertainty, risk, and cost before debugging experience influences an agent.",
+    "representation": "Pattern-variant-episode issue memory with retrieval telemetry",
+    "lifecycle": {
+      "write": "Store reusable debugging experience",
+      "retrieve": "Controller chooses retrieval or abstention",
+      "update": "Feedback informs rewards and controller behavior",
+      "forget": "Suppress risky injections; deletion is unspecified"
+    },
+    "evaluation": "Deterministic replay and bounded 200-case validation",
+    "limitations": "Proxy success and smoke-scale artifacts do not establish broad software-repair performance.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2604.27283v1",
+    "evidenceUrl": "https://arxiv.org/abs/2604.27283v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "4abd3deeda364596514f1ed74ea7303b3d06e9793af0998954df27199472f106",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2608.24188",
+    "version": "v1",
+    "title": "Paritok-4B: Intent-Conditioned Context Compression for Coding Agents",
+    "authors": [
+      "Jiayu Shi",
+      "Luzhuo Chen"
+    ],
+    "published": "2026-08-25",
+    "updated": "2026-08-25",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2608.24188v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Paritok-4B",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "code",
+      "debug"
+    ],
+    "summary": "Compresses tool output by selecting exact spans conditioned on the task. Extractive retention aims to preserve code identifiers and edit locations more reliably than prose paraphrasing.",
+    "representation": "Intent-conditioned retained spans from file reads and tool output",
+    "lifecycle": {
+      "write": "Distill trajectories into compression examples",
+      "retrieve": "Deliver selected spans as compressed context",
+      "update": "Task intent conditions span selection",
+      "forget": "Remove unselected spans from delivered context"
+    },
+    "evaluation": "OpenHands trajectories and SWE-bench Lite single-shot solving",
+    "limitations": "Non-significance is not equivalence; single-shot quality does not establish multi-turn savings.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2608.24188v1",
+    "evidenceUrl": "https://arxiv.org/abs/2608.24188v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "d61726d245d5e028f02b89ebf9747065f377777f24fa42590aa1f3c7061500d9",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Working context & summaries",
+    "storageCategories": [
+      "context"
+    ]
+  },
+  {
+    "id": "2609.22114",
+    "version": "v1",
+    "title": "An Empirical Cost Attribution of Context-Compression Gateways in Multi-Turn Coding Agents",
+    "authors": [
+      "Luzhuo Chen",
+      "Jiayu Shi"
+    ],
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2609.22114v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "Compression Cost Attribution",
+    "categories": [
+      "context",
+      "evaluation"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Separates schema filtering, source compression, and history summarization when measuring coding-agent cost. It studies how compressed reads accumulate in later prompts and how original-source recall spends savings back.",
+    "representation": "Compressed outputs, filtered schemas, and summarized histories",
+    "lifecycle": {
+      "write": "Gateway compresses reads during coding work",
+      "retrieve": "Recall original source on demand",
+      "update": "Compressed reads accumulate in later history",
+      "forget": "Filtering and summarization alter delivered context"
+    },
+    "evaluation": "Controlled A/B multi-turn coding sessions",
+    "limitations": "Single-shot quality differs from cache-priced multi-turn economics.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2609.22114v1",
+    "evidenceUrl": "https://arxiv.org/abs/2609.22114v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "7b13229ae192b64bf00ad78c0f32a105c3c78554c05ff509cdb0901d1dc25c2c",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Working context & summaries",
+    "storageCategories": [
+      "histories",
+      "context"
+    ]
+  },
+  {
+    "id": "2601.06789",
+    "version": "v2",
+    "title": "MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences",
+    "authors": [
+      "Qihao Wang",
+      "Ziming Cheng",
+      "Shuo Zhang",
+      "Fan Liu",
+      "Rui Xu",
+      "Heng Lian",
+      "Kunyi Wang",
+      "Xiaoming Yu",
+      "Jianghao Yin",
+      "Sen Hu",
+      "Yue Hu",
+      "Shaolei Zhang",
+      "Yanbing Liu",
+      "Ronghao Chen",
+      "Huacan Wang"
+    ],
+    "published": "2026-01-11",
+    "updated": "2026-01-13",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2601.06789v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "MemGovern",
+    "categories": [
+      "experience",
+      "repository",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "debug",
+      "reflect"
+    ],
+    "summary": "Transforms fragmented GitHub issue history into structured experience cards. Agentic search retrieves governed human repair knowledge instead of starting every issue from scratch.",
+    "representation": "Governed experience cards from GitHub history",
+    "lifecycle": {
+      "write": "Convert issue-tracking data into experience cards",
+      "retrieve": "Logic-driven search over governed experience",
+      "update": "Governance structures and curates human history",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Verified",
+    "limitations": "Card quality and historical availability condition usefulness; deletion policies are not established.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2601.06789v2",
+    "evidenceUrl": "https://arxiv.org/abs/2601.06789v2",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2026,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:03.665Z",
+    "abstractHash": "510ad8b819addf48590b11ba697696f8ef8e1e0d4d1bcf657fa4142c3ccb7bce",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2303.11366",
+    "version": "v4",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "authors": [
+      "Noah Shinn",
+      "Federico Cassano",
+      "Edward Berman",
+      "Ashwin Gopinath",
+      "Karthik Narasimhan",
+      "Shunyu Yao"
+    ],
+    "published": "2023-03-20",
+    "updated": "2023-10-10",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2303.11366v4",
+    "metadataSource": "arXiv Atom API",
+    "short": "Reflexion",
+    "categories": [
+      "experience",
+      "context"
+    ],
+    "stages": [
+      "code",
+      "test",
+      "reflect"
+    ],
+    "summary": "Turns task feedback into verbal reflections retained in an episodic buffer. Agents consult those reflections on subsequent attempts, including code generation, without changing model weights.",
+    "representation": "Episodic buffer of verbal self-reflections",
+    "lifecycle": {
+      "write": "Reflect on numeric or language feedback",
+      "retrieve": "Use reflections in subsequent attempts",
+      "update": "Append feedback-derived reflections",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Reasoning, decision-making, and coding including HumanEval",
+    "limitations": "Coding is a relevant application, but this broader method predates repository-level repair benchmarks.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2303.11366v4",
+    "evidenceUrl": "https://arxiv.org/abs/2303.11366v4",
+    "publication": "Conference paper",
+    "venue": "NeurIPS 2023",
+    "alternateSources": [
+      {
+        "publication": "Conference paper",
+        "venue": "NeurIPS 2023",
+        "url": "https://papers.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html"
+      }
+    ],
+    "year": 2023,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:06.510Z",
+    "abstractHash": "316e3d252ba03a563d838cbb67f8b46324fa4ce37ebafa4573b6efb0f16155d6",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Event & interaction histories",
+    "storageCategories": [
+      "notes",
+      "histories"
+    ]
+  },
+  {
+    "id": "2308.00352",
+    "version": "v7",
+    "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+    "authors": [
+      "Sirui Hong",
+      "Mingchen Zhuge",
+      "Jiaqi Chen",
+      "Xiawu Zheng",
+      "Yuheng Cheng",
+      "Ceyao Zhang",
+      "Jinlin Wang",
+      "Zili Wang",
+      "Steven Ka Shing Yau",
+      "Zijuan Lin",
+      "Liyang Zhou",
+      "Chenyu Ran",
+      "Lingfeng Xiao",
+      "Chenglin Wu",
+      "Jürgen Schmidhuber"
+    ],
+    "published": "2023-08-01",
+    "updated": "2024-11-01",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2308.00352v7",
+    "metadataSource": "arXiv Atom API",
+    "short": "MetaGPT",
+    "categories": [
+      "collaboration",
+      "context"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Uses a shared pool of structured messages to coordinate software roles. Agents publish artifacts, subscribe to relevant information, and revisit stored messages while debugging against requirements and design.",
+    "representation": "Shared structured message pool and agent message history",
+    "lifecycle": {
+      "write": "Publish structured requirements, designs, and implementation messages",
+      "retrieve": "Role-based subscriptions filter shared messages",
+      "update": "Execution feedback prompts agents to revisit work",
+      "forget": "Cross-task forgetting policy is not established by the cited section"
+    },
+    "evaluation": "Collaborative software development, HumanEval, and MBPP",
+    "limitations": "Shared task memory is one component of the framework; overall results do not isolate its effect.",
+    "setting": "multi-agent",
+    "reviewStatus": "Agent source-check of cited full-text section complete; human review pending",
+    "evidenceDepth": "full-text",
+    "evidenceLocator": "Section 3.2: Communication Protocol; Figure 2",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "evidencePath": "html",
+    "pdfUrl": "https://arxiv.org/pdf/2308.00352v7",
+    "evidenceUrl": "https://arxiv.org/html/2308.00352v7",
+    "publication": "Conference paper",
+    "venue": "ICLR 2024",
+    "alternateSources": [
+      {
+        "publication": "Conference paper",
+        "venue": "ICLR 2024",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html"
+      }
+    ],
+    "year": 2023,
+    "fullTextStatus": "HTML retrieved; cited section checked by agent",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:09.750Z",
+    "abstractHash": "1209743a0f6299942572c774885dcbcdfa6f7ca5d68abf6f275bf4cd538f2a31",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Event & interaction histories",
+    "storageCategories": [
+      "records",
+      "histories"
+    ]
+  },
+  {
+    "id": "2407.15568",
+    "version": "v2",
+    "title": "Empowering Agile-Based Generative Software Development through Human-AI Teamwork",
+    "authors": [
+      "Sai Zhang",
+      "Zhenchang Xing",
+      "Ronghui Guo",
+      "Fangzhou Xu",
+      "Lei Chen",
+      "Zhaoyuan Zhang",
+      "Xiaowang Zhang",
+      "Zhiyong Feng",
+      "Zhiqiang Zhuang"
+    ],
+    "published": "2024-07-22",
+    "updated": "2024-11-08",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2407.15568v2",
+    "metadataSource": "arXiv Atom API",
+    "short": "AgileGen",
+    "categories": [
+      "collaboration",
+      "experience"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "test"
+    ],
+    "summary": "Collects user decision scenarios in a memory pool and recommends them during later requirement elicitation. Human-AI iterations connect testable requirements to generated software.",
+    "representation": "Memory pool of user decision-making scenarios",
+    "lifecycle": {
+      "write": "Collect user decision scenarios",
+      "retrieve": "Recommend scenarios to new users",
+      "update": "Not specified in the abstract",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Generative software development and user satisfaction",
+    "limitations": "Overall system comparisons combine memory, requirement representation, and interaction design.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2407.15568v2",
+    "evidenceUrl": "https://arxiv.org/abs/2407.15568v2",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2024,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:09.750Z",
+    "abstractHash": "20be8027150365d4b442c5eb54fdc72abd27f1f92bf85588364d020cc4d4cbdd",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Structured records Experience & skill banks",
+    "storageCategories": [
+      "records",
+      "banks"
+    ]
+  },
+  {
+    "id": "2507.00014",
+    "version": "v1",
+    "title": "SWE-Bench-CL: Continual Learning for Coding Agents",
+    "authors": [
+      "Thomas Joshi",
+      "Shayan Chowdhury",
+      "Fatih Uysal"
+    ],
+    "published": "2025-06-13",
+    "updated": "2025-06-13",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2507.00014v1",
+    "metadataSource": "arXiv Atom API",
+    "short": "SWE-Bench-CL",
+    "categories": [
+      "evaluation",
+      "experience",
+      "repository"
+    ],
+    "stages": [
+      "code",
+      "debug",
+      "maintain"
+    ],
+    "summary": "Orders software issues chronologically to evaluate experience accumulation, transfer, and forgetting. Its agent evaluation framework includes semantic memory and a protocol comparing memory-enabled and memory-disabled runs.",
+    "representation": "Chronological repository issue streams and FAISS-backed memory",
+    "lifecycle": {
+      "write": "Accumulate experience across sequential issues",
+      "retrieve": "Semantic memory supports the evaluation framework",
+      "update": "Not specified in the abstract",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "Continual-learning software benchmark based on SWE-bench Verified",
+    "limitations": "The abstract outlines a protocol and preliminary analysis; it does not establish broad memory gains.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2507.00014v1",
+    "evidenceUrl": "https://arxiv.org/abs/2507.00014v1",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:09.750Z",
+    "abstractHash": "2e1312f52b539e2bf26161c26b21621b8e2a93c66883de767ae6a3d801cd1bf3",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Databases & search indexes",
+    "storageCategories": [
+      "histories",
+      "backends"
+    ]
+  },
+  {
+    "id": "2307.07924",
+    "version": "v5",
+    "title": "ChatDev: Communicative Agents for Software Development",
+    "authors": [
+      "Chen Qian",
+      "Wei Liu",
+      "Hongzhang Liu",
+      "Nuo Chen",
+      "Yufan Dang",
+      "Jiahao Li",
+      "Cheng Yang",
+      "Weize Chen",
+      "Yusheng Su",
+      "Xin Cong",
+      "Juyuan Xu",
+      "Dahai Li",
+      "Zhiyuan Liu",
+      "Maosong Sun"
+    ],
+    "published": "2023-07-16",
+    "updated": "2024-06-05",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2307.07924v5",
+    "metadataSource": "arXiv Atom API",
+    "short": "ChatDev",
+    "categories": [
+      "collaboration",
+      "context"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "review",
+      "test"
+    ],
+    "summary": "Separates within-phase dialogue memory from solutions retained across phases. Passing completed subtask solutions into later phases preserves workflow continuity without carrying every prior utterance.",
+    "representation": "Short-term phase utterances and long-term cross-phase solutions",
+    "lifecycle": {
+      "write": "Record utterances within each phase",
+      "retrieve": "Use dialogue history within a phase and prior solutions at the next phase",
+      "update": "Append utterances and consolidate completed solutions",
+      "forget": "Transmit solutions rather than the complete prior dialogue"
+    },
+    "evaluation": "Multi-agent software development",
+    "limitations": "Long-term memory means cross-phase continuity here; persistence across independent projects is not established.",
+    "setting": "multi-agent",
+    "reviewStatus": "Agent source-check of cited full-text section complete; human review pending",
+    "evidenceDepth": "full-text",
+    "evidenceLocator": "Section 3.1: Chat Chain, Memory subsection",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "evidencePath": "html",
+    "pdfUrl": "https://arxiv.org/pdf/2307.07924v5",
+    "evidenceUrl": "https://arxiv.org/html/2307.07924v5",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2023,
+    "fullTextStatus": "HTML retrieved; cited section checked by agent",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:12.383Z",
+    "abstractHash": "4aa017a83671f0339cbcbd29f6bb0eb006673116bacdfb92d287aa1e1c6c6920",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Notes & documents Event & interaction histories",
+    "storageCategories": [
+      "notes",
+      "histories"
+    ]
+  },
+  {
+    "id": "2405.15793",
+    "version": "v3",
+    "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+    "authors": [
+      "John Yang",
+      "Carlos E. Jimenez",
+      "Alexander Wettig",
+      "Kilian Lieret",
+      "Shunyu Yao",
+      "Karthik Narasimhan",
+      "Ofir Press"
+    ],
+    "published": "2024-05-06",
+    "updated": "2024-11-11",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2405.15793v3",
+    "metadataSource": "arXiv Atom API",
+    "short": "SWE-agent Context",
+    "categories": [
+      "context",
+      "governance"
+    ],
+    "stages": [
+      "explore",
+      "code",
+      "debug",
+      "test"
+    ],
+    "summary": "Processes interaction history to keep coding context concise. Recent observations stay detailed, older observations collapse to single lines, and redundant error messages are removed to reduce stale or distracting context.",
+    "representation": "Action history with detailed recent observations and collapsed older output",
+    "lifecycle": {
+      "write": "Record commands and observations during a task",
+      "retrieve": "Construct the prompt from processed history at each step",
+      "update": "Collapse observations older than the latest five",
+      "forget": "Remove redundant generation errors and most old observation content"
+    },
+    "evaluation": "SWE-bench and history-management ablations",
+    "limitations": "Context management is one part of a broader agent interface; this is within-task working memory.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check of cited full-text section complete; human review pending",
+    "evidenceDepth": "full-text",
+    "evidenceLocator": "Section 3: Context management; Table 3; Appendix A.3",
+    "scope": "main",
+    "staleKnowledge": "Older observations collapse to avoid outdated file information in active context",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "evidencePath": "html",
+    "pdfUrl": "https://arxiv.org/pdf/2405.15793v3",
+    "evidenceUrl": "https://arxiv.org/html/2405.15793v3",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2024,
+    "fullTextStatus": "HTML retrieved; cited section checked by agent",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:18.838Z",
+    "abstractHash": "ea972f3764419aa209152b1bb8ba9b7d2688da1cb009cbdd4aa62664c263911a",
+    "storageFormats": [
+      "unspecified"
+    ],
+    "storageEvidence": [],
+    "storageSearchText": "Format not established Event & interaction histories Working context & summaries",
+    "storageCategories": [
+      "histories",
+      "context"
+    ]
+  },
+  {
+    "id": "2508.00031",
+    "version": "v3",
+    "title": "Git Context Controller: Manage the Context of LLM-based Agents like Git",
+    "authors": [
+      "Junde Wu",
+      "Minhao Hu",
+      "Jiayuan Zhu",
+      "Jiazhen Pan",
+      "Yuyuan Liu",
+      "Min Xu",
+      "Yueming Jin"
+    ],
+    "published": "2025-07-30",
+    "updated": "2026-07-24",
+    "doi": "",
+    "journalRef": "",
+    "sourceUrl": "https://arxiv.org/abs/2508.00031v3",
+    "metadataSource": "arXiv Atom API",
+    "short": "Git Context Controller",
+    "categories": [
+      "context",
+      "repository",
+      "collaboration"
+    ],
+    "stages": [
+      "plan",
+      "code",
+      "reflect",
+      "maintain"
+    ],
+    "summary": "Treats coding-agent context as a versioned memory hierarchy. Commit, branch, merge, and context operations checkpoint milestones, isolate alternatives, and support memory recovery or handoff across sessions.",
+    "representation": "Persistent file-system memory with version-control-style operations",
+    "lifecycle": {
+      "write": "Commit context at task milestones",
+      "retrieve": "Context operations recover retained goals and history",
+      "update": "Branch and merge alternative plans and memory",
+      "forget": "Not specified in the abstract"
+    },
+    "evaluation": "SWE-bench Lite and an agent-construction case study",
+    "limitations": "Memory scaffolding and agent settings affect reported outcomes; the case study is distinct from benchmark repair.",
+    "setting": "single",
+    "reviewStatus": "Agent source-check complete; human review pending",
+    "evidenceDepth": "abstract",
+    "evidenceLocator": "Abstract",
+    "scope": "main",
+    "staleKnowledge": "Not established by the cited evidence",
+    "findings": "See the source for reported results; benchmark values are not normalized across papers.",
+    "pdfUrl": "https://arxiv.org/pdf/2508.00031v3",
+    "evidenceUrl": "https://arxiv.org/abs/2508.00031v3",
+    "publication": "Preprint",
+    "venue": "arXiv",
+    "alternateSources": [],
+    "year": 2025,
+    "fullTextStatus": "Not collected",
+    "inclusionReason": "Explicit coding-agent memory method or memory evaluation with a software-development setting.",
+    "metadataCheckedAt": "2026-09-27T08:27:18.838Z",
+    "abstractHash": "f8994e48fd1536f83ad7b12f33da2b20c3803e6de2846765eee42f6f0d932d16",
+    "storageFormats": [
+      "md",
+      "yaml"
+    ],
+    "storageEvidence": [
+      {
+        "formats": [
+          "md",
+          "yaml"
+        ],
+        "sourceUrl": "https://arxiv.org/html/2508.00031v1",
+        "locator": "Section 2.1: GCC File System",
+        "note": "The memory hierarchy uses main.md, commit.md, log.md, and metadata.yaml.",
+        "reviewStatus": "Agent source-check complete; human review pending"
+      }
+    ],
+    "storageSearchText": ".md — Markdown .yaml / .yml — YAML Notes & documents Structured records",
+    "storageCategories": [
+      "notes",
+      "records"
+    ]
+  }
+]

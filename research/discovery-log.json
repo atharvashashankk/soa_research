@@ -1,0 +1,31 @@
+{
+  "collectedAt": "2026-09-27T08:13:16.104Z",
+  "queries": [
+    "(all:\"software engineering\" OR all:\"coding agent\") AND (all:memory OR all:\"context management\")",
+    "(all:\"SWE-bench\" OR all:\"code agent\") AND (all:memory OR all:\"experience reuse\" OR all:\"skill bank\")",
+    "(all:\"software engineering\" OR all:\"coding agents\") AND (all:\"reflection\" OR all:\"persistent notes\" OR all:\"context compression\")"
+  ],
+  "cutoff": "2026-09-27",
+  "count": 267,
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:13:09.597Z",
+      "sha256": "b0963bb2cf222b3c356277f7d3578dff72ac992fd8469ef95a8fba272d926365"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22SWE-bench%22%20OR%20all%3A%22code%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22experience%20reuse%22%20OR%20all%3A%22skill%20bank%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:13:12.636Z",
+      "sha256": "3de103cdf2b0baa3bcc4df3f5fa1202f085b182c774fb6a236f9b02019f1efa2"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:13:16.021Z",
+      "sha256": "2a447b06585d9b056a8299f155f030ba9e764adaea79955f4f64696b33c63c82"
+    }
+  ],
+  "errors": []
+}

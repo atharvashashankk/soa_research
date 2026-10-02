@@ -1,0 +1,9 @@
+[
+  {"id":"experience","name":"Experience & reflection","color":"#b95735","description":"Distill previous successes and failures into lessons used on later software tasks."},
+  {"id":"context","name":"Working context","color":"#49786a","description":"Compress, retain, or select interaction history within long coding sessions."},
+  {"id":"repository","name":"Repository knowledge","color":"#647c9b","description":"Preserve codebase history, architectural decisions, and project-specific knowledge."},
+  {"id":"skills","name":"Procedural skills","color":"#927354","description":"Turn coding trajectories into reusable procedures and maintain a skill bank."},
+  {"id":"governance","name":"Memory governance","color":"#8b6b94","description":"Control admission, conflicts, stale records, validation, and memory lifecycle."},
+  {"id":"evaluation","name":"Evaluation & limits","color":"#627b85","description":"Measure memory utility, failure modes, and downstream executable software outcomes."},
+  {"id":"collaboration","name":"Shared & user memory","color":"#9b8544","description":"Share experience across agent frameworks or retain user intent across coding tasks."}
+]

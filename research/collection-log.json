@@ -1,0 +1,349 @@
+{
+  "collectedAt": "2026-09-27T08:27:18.878Z",
+  "cutoff": "2026-09-27",
+  "protocolVersion": "1.0.0",
+  "count": 50,
+  "pilotTarget": 20,
+  "expansionTarget": 100,
+  "method": "Targeted search and primary-source metadata collection; curated initial collection, not exhaustive",
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2505.23422,2510.01003,2609.23570,2606.28434,2509.25140,2608.06153,2608.13662,2605.01567,2608.31057,2602.21611,2608.20664,2507.06229,2604.14004,2605.25430,2601.07190,2604.23069,2512.22087,2512.10398,2510.21903,2608.21867,2609.20130,2609.07357,2609.05510,2608.20685,2608.09181,2608.06811,2608.04278,2608.00122,2607.20972,2607.14390,2607.01916,2606.23752,2606.12329,2606.08151,2605.30842,2605.17444,2605.14563,2605.08468,2608.20342,2604.27283,2608.24188,2609.22114,2601.06789,2303.11366,2308.00352,2407.15568,2507.00014,2307.07924,2405.15793,2508.00031&max_results=50",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:27:03.610Z",
+      "sha256": "aadd48ba6699ce2c14f8f9984ac6580b4b587d403338c6a5166b283021c5e530"
+    },
+    {
+      "url": "https://aclanthology.org/2025.realm-1.30/",
+      "cached": true,
+      "sha256": "4f3afa5986a344f49450938710c8a01a134de1148ac8e7486b0cfa032228a058"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/b4c06f095368497f3ac19422efef8133-Abstract-Conference.html",
+      "cached": true,
+      "sha256": "ca87781ca4b132b84736f30d890d2aec699fae4fdd14e60a18c3e19577f5523b"
+    },
+    {
+      "url": "https://www.research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+      "cached": true,
+      "sha256": "d31b7fb166dc336f6d574df4de15bda6e02a085ec1a583183288f1ece4d63f2a"
+    },
+    {
+      "url": "https://papers.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:27:06.509Z",
+      "sha256": "fdeb4269147872960c73522867921def49c9c918ae1c3c503a503d7cb227efed"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:27:09.533Z",
+      "sha256": "e0e2ea8ea1070d0c6dc5c8209c37648908e80724cd1fe30702098e3daa2b1ec9"
+    },
+    {
+      "url": "https://arxiv.org/html/2308.00352v7",
+      "cached": true,
+      "sha256": "c30cc6d1aecb0a89e084e60dea9fe81171d38f93058dcad015e32af85c321e3d"
+    },
+    {
+      "url": "https://arxiv.org/html/2307.07924v5",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:27:12.323Z",
+      "sha256": "7fddf19ae50175e329197ab432285356fca76afc4ab7f9fbe26d09fb4085d908"
+    },
+    {
+      "url": "https://arxiv.org/html/2405.15793v3",
+      "cached": false,
+      "retrievedAt": "2026-09-27T08:27:18.506Z",
+      "sha256": "62e6b7d2bfc59a833629beeb8b5bf5d4793329b7794ff26fe7e073119c6b701f"
+    }
+  ],
+  "errors": [],
+  "screening": [
+    {
+      "id": "2505.23422",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2510.01003",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.23570",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2606.28434",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2509.25140",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.06153",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.13662",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.01567",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.31057",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2602.21611",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.20664",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2507.06229",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2604.14004",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.25430",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2601.07190",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2604.23069",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2512.22087",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2512.10398",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2510.21903",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.21867",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.20130",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.07357",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.05510",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.20685",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.09181",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.06811",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.04278",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.00122",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2607.20972",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2607.14390",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2607.01916",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2606.23752",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2606.12329",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2606.08151",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.30842",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.17444",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.14563",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2605.08468",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.20342",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2604.27283",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2608.24188",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.22114",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2601.06789",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2303.11366",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2308.00352",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2407.15568",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2507.00014",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2307.07924",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2405.15793",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2508.00031",
+      "decision": "include",
+      "reason": "Explicit coding-agent memory method or memory evaluation with a software-development setting."
+    },
+    {
+      "id": "2609.19721",
+      "decision": "exclude",
+      "reason": "Clinical billing coding, not software development"
+    },
+    {
+      "id": "2604.27003",
+      "decision": "background",
+      "reason": "ALFWorld and BabyAI evaluation; no software-development connection established"
+    },
+    {
+      "id": "2512.18746",
+      "decision": "background",
+      "reason": "Abstract does not establish software-development evaluation; requires further screening"
+    },
+    {
+      "id": "2606.22417",
+      "decision": "exclude",
+      "reason": "Structural code retrieval without a substantive agent-memory management contribution in the abstract"
+    },
+    {
+      "id": "2609.11060",
+      "decision": "background",
+      "reason": "Uses a coding-agent harness for database and consulting tasks; no software-development evaluation established"
+    },
+    {
+      "id": "2407.16741",
+      "decision": "background",
+      "reason": "Platform architecture without a directly established memory contribution in the inspected source"
+    },
+    {
+      "id": "2510.04618",
+      "decision": "background",
+      "reason": "Agent and finance memory framework; explicit software-development evaluation not established by the abstract"
+    }
+  ]
+}

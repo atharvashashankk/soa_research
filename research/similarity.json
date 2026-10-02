@@ -1,0 +1,2222 @@
+{
+  "generatedAt": "2026-09-27T08:29:24.155Z",
+  "inputHash": "79561469745fb5c12fbee9837e20b3ed9a72c711a234ac488f4350f701b4fb68",
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "dtype": "q8",
+  "pooling": "mean",
+  "normalize": true,
+  "dimensions": 384,
+  "metric": "cosine",
+  "textBasis": "summary, memory representation, lifecycle descriptions, workflow stages",
+  "method": "Local sentence embeddings with cosine similarity; taxonomy groups are overlapping source-based interpretations.",
+  "neighborCount": 4,
+  "neighbors": {
+    "2505.23422": [
+      {
+        "id": "2609.23570",
+        "score": 0.6710537424396767,
+        "shared": [
+          "experience",
+          "repository",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2509.25140",
+        "score": 0.6065722215351278,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.6031149518490053,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.5899715210843276,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2510.01003": [
+      {
+        "id": "2608.20685",
+        "score": 0.6946064904401035,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2605.14563",
+        "score": 0.668488257367466,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.6303972830126277,
+        "shared": [
+          "repository",
+          "experience"
+        ]
+      },
+      {
+        "id": "2609.23570",
+        "score": 0.6120361895416506,
+        "shared": [
+          "repository",
+          "experience"
+        ]
+      }
+    ],
+    "2609.23570": [
+      {
+        "id": "2505.23422",
+        "score": 0.6710537424396767,
+        "shared": [
+          "evaluation",
+          "experience",
+          "repository"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.6598757618867038,
+        "shared": [
+          "evaluation",
+          "experience",
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.6557323519638208,
+        "shared": [
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.6402787027196284,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2606.28434": [
+      {
+        "id": "2608.31057",
+        "score": 0.8293521319440409,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2601.07190",
+        "score": 0.787199014063198,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.7611079082364386,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.7201353247836432,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2509.25140": [
+      {
+        "id": "2605.25430",
+        "score": 0.6925213707898094,
+        "shared": [
+          "experience",
+          "skills"
+        ]
+      },
+      {
+        "id": "2604.27283",
+        "score": 0.6134302689011515,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.06153",
+        "score": 0.6117302093144702,
+        "shared": [
+          "skills"
+        ]
+      },
+      {
+        "id": "2607.20972",
+        "score": 0.6073582547383384,
+        "shared": []
+      }
+    ],
+    "2608.06153": [
+      {
+        "id": "2605.25430",
+        "score": 0.752376901522225,
+        "shared": [
+          "skills",
+          "governance"
+        ]
+      },
+      {
+        "id": "2601.07190",
+        "score": 0.6847724901322215,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2604.14004",
+        "score": 0.6646732508952008,
+        "shared": [
+          "skills"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.6577318304288565,
+        "shared": [
+          "skills",
+          "governance"
+        ]
+      }
+    ],
+    "2608.13662": [
+      {
+        "id": "2609.05510",
+        "score": 0.5466191956377797,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.546006665979534,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.20685",
+        "score": 0.5376106883971824,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2507.06229",
+        "score": 0.5144503875317812,
+        "shared": []
+      }
+    ],
+    "2605.01567": [
+      {
+        "id": "2605.25430",
+        "score": 0.6523350508308953,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2604.27283",
+        "score": 0.6482060475010568,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.6337290545177385,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.6079486809549688,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2608.31057": [
+      {
+        "id": "2606.28434",
+        "score": 0.8293521319440409,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.7472702459124705,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2609.22114",
+        "score": 0.7179867725254636,
+        "shared": [
+          "context",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.7150074058090924,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2602.21611": [
+      {
+        "id": "2607.20972",
+        "score": 0.5929740018340977,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.5795897773656604,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.5422494567367572,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2505.23422",
+        "score": 0.5368235551278249,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2608.20664": [
+      {
+        "id": "2507.00014",
+        "score": 0.6586745059685953,
+        "shared": [
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2609.23570",
+        "score": 0.6557323519638208,
+        "shared": [
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.6472102643184425,
+        "shared": []
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6467682663608575,
+        "shared": []
+      }
+    ],
+    "2507.06229": [
+      {
+        "id": "2609.07357",
+        "score": 0.6491894918677082,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.6385244260273555,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.6302105990250284,
+        "shared": [
+          "experience",
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2601.07190",
+        "score": 0.6189877541072464,
+        "shared": []
+      }
+    ],
+    "2604.14004": [
+      {
+        "id": "2608.06153",
+        "score": 0.6646732508952008,
+        "shared": [
+          "skills"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.636921320718906,
+        "shared": [
+          "experience",
+          "skills"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.6062490411155544,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.25430",
+        "score": 0.5931736697942426,
+        "shared": [
+          "experience",
+          "skills"
+        ]
+      }
+    ],
+    "2605.25430": [
+      {
+        "id": "2608.06153",
+        "score": 0.752376901522225,
+        "shared": [
+          "skills",
+          "governance"
+        ]
+      },
+      {
+        "id": "2509.25140",
+        "score": 0.6925213707898094,
+        "shared": [
+          "skills",
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.6575468939067602,
+        "shared": [
+          "skills",
+          "governance",
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.01567",
+        "score": 0.6523350508308953,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2601.07190": [
+      {
+        "id": "2606.28434",
+        "score": 0.787199014063198,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.7141236800078199,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.31057",
+        "score": 0.6958751893900527,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2608.06153",
+        "score": 0.6847724901322215,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2604.23069": [
+      {
+        "id": "2609.07357",
+        "score": 0.6141800743996508,
+        "shared": []
+      },
+      {
+        "id": "2606.08151",
+        "score": 0.5911490237783982,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2405.15793",
+        "score": 0.5885831574802924,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.14563",
+        "score": 0.5817948540800497,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2512.22087": [
+      {
+        "id": "2606.28434",
+        "score": 0.7611079082364386,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.31057",
+        "score": 0.7150074058090924,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2601.07190",
+        "score": 0.7141236800078199,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6995111319384922,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2512.10398": [
+      {
+        "id": "2512.22087",
+        "score": 0.6747467598145938,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6203587061262363,
+        "shared": [
+          "context",
+          "repository"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6083333739259739,
+        "shared": [
+          "context",
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.5930237543118672,
+        "shared": []
+      }
+    ],
+    "2510.21903": [
+      {
+        "id": "2606.28434",
+        "score": 0.6916448121363804,
+        "shared": []
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6621785341400013,
+        "shared": [
+          "collaboration",
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6599270364384486,
+        "shared": [
+          "collaboration",
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.06153",
+        "score": 0.6357090128607712,
+        "shared": []
+      }
+    ],
+    "2608.21867": [
+      {
+        "id": "2605.08468",
+        "score": 0.6002012404692592,
+        "shared": [
+          "governance",
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.5948172256670751,
+        "shared": [
+          "governance",
+          "experience"
+        ]
+      },
+      {
+        "id": "2607.20972",
+        "score": 0.5585452403479181,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.5578601828069946,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2609.20130": [
+      {
+        "id": "2605.17444",
+        "score": 0.6578838978108649,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.6433439235469876,
+        "shared": [
+          "experience",
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.06811",
+        "score": 0.5966670374270476,
+        "shared": [
+          "experience",
+          "governance"
+        ]
+      },
+      {
+        "id": "2607.01916",
+        "score": 0.5917975288828005,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2609.07357": [
+      {
+        "id": "2507.06229",
+        "score": 0.6491894918677082,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2609.23570",
+        "score": 0.6269215318527745,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2604.23069",
+        "score": 0.6141800743996508,
+        "shared": []
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.5951634826225083,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2609.05510": [
+      {
+        "id": "2608.20664",
+        "score": 0.6347428091282935,
+        "shared": [
+          "governance",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6256914077991584,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.5989943659601461,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2607.01916",
+        "score": 0.5909088469887237,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2608.20685": [
+      {
+        "id": "2510.01003",
+        "score": 0.6946064904401035,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2605.14563",
+        "score": 0.6287921873210768,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.6054867448596599,
+        "shared": [
+          "governance",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.5988268987005039,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      }
+    ],
+    "2608.09181": [
+      {
+        "id": "2608.20664",
+        "score": 0.5791110315063154,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2607.20972",
+        "score": 0.5657308266108876,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.5554804367328696,
+        "shared": [
+          "experience",
+          "skills"
+        ]
+      },
+      {
+        "id": "2609.05510",
+        "score": 0.5033553568600159,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2608.06811": [
+      {
+        "id": "2609.20130",
+        "score": 0.5966670374270476,
+        "shared": [
+          "experience",
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.5749991770994898,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2601.07190",
+        "score": 0.5523331185744421,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2609.05510",
+        "score": 0.5440024817383841,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2608.04278": [
+      {
+        "id": "2605.14563",
+        "score": 0.5999814718457339,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20685",
+        "score": 0.5227635762521442,
+        "shared": [
+          "repository",
+          "governance",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.4668425269083043,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.4566836730757642,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2608.00122": [
+      {
+        "id": "2609.23570",
+        "score": 0.6402787027196284,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2507.06229",
+        "score": 0.6302105990250284,
+        "shared": [
+          "collaboration",
+          "experience"
+        ]
+      },
+      {
+        "id": "2601.06789",
+        "score": 0.6212582413884481,
+        "shared": [
+          "experience",
+          "governance"
+        ]
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.6128540559254597,
+        "shared": [
+          "collaboration"
+        ]
+      }
+    ],
+    "2607.20972": [
+      {
+        "id": "2608.20664",
+        "score": 0.629123495663418,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6231049410527184,
+        "shared": [
+          "context",
+          "repository"
+        ]
+      },
+      {
+        "id": "2509.25140",
+        "score": 0.6073582547383384,
+        "shared": []
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.6049461644644847,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2607.14390": [
+      {
+        "id": "2609.20130",
+        "score": 0.6433439235469876,
+        "shared": [
+          "governance",
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6358695641229674,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.6354439467017728,
+        "shared": [
+          "repository",
+          "experience"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6343361590168015,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2607.01916": [
+      {
+        "id": "2601.07190",
+        "score": 0.6701755178680673,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.6602173711746061,
+        "shared": [
+          "repository",
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.31057",
+        "score": 0.6377048511162603,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.6327509543559791,
+        "shared": [
+          "repository",
+          "experience"
+        ]
+      }
+    ],
+    "2606.23752": [
+      {
+        "id": "2405.15793",
+        "score": 0.6498086611987479,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.30842",
+        "score": 0.6341274659919343,
+        "shared": [
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.6258344446804038,
+        "shared": [
+          "collaboration",
+          "repository"
+        ]
+      },
+      {
+        "id": "2606.12329",
+        "score": 0.6224908505713519,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      }
+    ],
+    "2606.12329": [
+      {
+        "id": "2606.23752",
+        "score": 0.6224908505713519,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2609.05510",
+        "score": 0.5820260363335211,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      },
+      {
+        "id": "2405.15793",
+        "score": 0.5670253080758654,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2607.20972",
+        "score": 0.5071894480794722,
+        "shared": [
+          "repository",
+          "governance"
+        ]
+      }
+    ],
+    "2606.08151": [
+      {
+        "id": "2604.23069",
+        "score": 0.5911490237783982,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2607.01916",
+        "score": 0.5751116626349041,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.5611212486970716,
+        "shared": []
+      },
+      {
+        "id": "2407.15568",
+        "score": 0.5588604509702257,
+        "shared": []
+      }
+    ],
+    "2605.30842": [
+      {
+        "id": "2606.28434",
+        "score": 0.6755434666257427,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6666036867021528,
+        "shared": [
+          "context",
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6472123646678005,
+        "shared": [
+          "context",
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2609.22114",
+        "score": 0.6460254937024799,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2605.17444": [
+      {
+        "id": "2607.01916",
+        "score": 0.6602173711746061,
+        "shared": [
+          "experience",
+          "repository"
+        ]
+      },
+      {
+        "id": "2609.20130",
+        "score": 0.6578838978108649,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.6472102643184425,
+        "shared": []
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.6354439467017728,
+        "shared": [
+          "experience",
+          "repository"
+        ]
+      }
+    ],
+    "2605.14563": [
+      {
+        "id": "2510.01003",
+        "score": 0.668488257367466,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20685",
+        "score": 0.6287921873210768,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2609.23570",
+        "score": 0.614498138580851,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2607.14390",
+        "score": 0.6077088187742337,
+        "shared": [
+          "repository"
+        ]
+      }
+    ],
+    "2605.08468": [
+      {
+        "id": "2608.06153",
+        "score": 0.6577318304288565,
+        "shared": [
+          "skills",
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.25430",
+        "score": 0.6575468939067602,
+        "shared": [
+          "experience",
+          "skills",
+          "governance"
+        ]
+      },
+      {
+        "id": "2604.14004",
+        "score": 0.636921320718906,
+        "shared": [
+          "experience",
+          "skills"
+        ]
+      },
+      {
+        "id": "2605.01567",
+        "score": 0.6337290545177385,
+        "shared": [
+          "governance"
+        ]
+      }
+    ],
+    "2608.20342": [
+      {
+        "id": "2508.00031",
+        "score": 0.7085848636911727,
+        "shared": [
+          "collaboration",
+          "repository",
+          "context"
+        ]
+      },
+      {
+        "id": "2606.28434",
+        "score": 0.6710386310102494,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.6599270364384486,
+        "shared": [
+          "collaboration",
+          "repository"
+        ]
+      },
+      {
+        "id": "2605.30842",
+        "score": 0.6472123646678005,
+        "shared": [
+          "collaboration",
+          "context"
+        ]
+      }
+    ],
+    "2604.27283": [
+      {
+        "id": "2605.01567",
+        "score": 0.6482060475010568,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2609.23570",
+        "score": 0.619879782775834,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2509.25140",
+        "score": 0.6134302689011515,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2407.15568",
+        "score": 0.5892011910323731,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2608.24188": [
+      {
+        "id": "2606.28434",
+        "score": 0.6822553645727091,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.31057",
+        "score": 0.6784567424793732,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.6571284734779124,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2609.22114",
+        "score": 0.6425143067007705,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2609.22114": [
+      {
+        "id": "2608.31057",
+        "score": 0.7179867725254636,
+        "shared": [
+          "context",
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2606.28434",
+        "score": 0.691601184521371,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2605.30842",
+        "score": 0.6460254937024799,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2608.24188",
+        "score": 0.6425143067007705,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2601.06789": [
+      {
+        "id": "2601.07190",
+        "score": 0.622083234061078,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.00122",
+        "score": 0.6212582413884481,
+        "shared": [
+          "experience",
+          "governance"
+        ]
+      },
+      {
+        "id": "2609.07357",
+        "score": 0.5890206293582966,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2507.06229",
+        "score": 0.5712087402567151,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2303.11366": [
+      {
+        "id": "2505.23422",
+        "score": 0.5609892412334724,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.08468",
+        "score": 0.5503360759731715,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2605.17444",
+        "score": 0.5483883401029108,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2308.00352",
+        "score": 0.5469731128204386,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2308.00352": [
+      {
+        "id": "2608.20342",
+        "score": 0.6319971064105956,
+        "shared": [
+          "collaboration",
+          "context"
+        ]
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.6314732471866485,
+        "shared": []
+      },
+      {
+        "id": "2508.00031",
+        "score": 0.6272420127551263,
+        "shared": [
+          "collaboration",
+          "context"
+        ]
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.6067537549472117,
+        "shared": [
+          "collaboration"
+        ]
+      }
+    ],
+    "2407.15568": [
+      {
+        "id": "2604.27283",
+        "score": 0.5892011910323731,
+        "shared": [
+          "experience"
+        ]
+      },
+      {
+        "id": "2510.21903",
+        "score": 0.5887570137520968,
+        "shared": [
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2606.08151",
+        "score": 0.5588604509702257,
+        "shared": []
+      },
+      {
+        "id": "2507.00014",
+        "score": 0.5190185010410624,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2507.00014": [
+      {
+        "id": "2609.23570",
+        "score": 0.6598757618867038,
+        "shared": [
+          "evaluation",
+          "experience",
+          "repository"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.6586745059685953,
+        "shared": [
+          "evaluation"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.6410016711102077,
+        "shared": [
+          "repository"
+        ]
+      },
+      {
+        "id": "2507.06229",
+        "score": 0.6385244260273555,
+        "shared": [
+          "experience"
+        ]
+      }
+    ],
+    "2307.07924": [
+      {
+        "id": "2605.30842",
+        "score": 0.5356789319133722,
+        "shared": [
+          "collaboration",
+          "context"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.5184177148812443,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2405.15793",
+        "score": 0.5050647276697103,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2608.06811",
+        "score": 0.498832884969341,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2405.15793": [
+      {
+        "id": "2606.23752",
+        "score": 0.6498086611987479,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2608.20664",
+        "score": 0.6458603657287991,
+        "shared": [
+          "governance"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.6385180816411086,
+        "shared": [
+          "context",
+          "governance"
+        ]
+      },
+      {
+        "id": "2605.30842",
+        "score": 0.6233098678207909,
+        "shared": [
+          "context"
+        ]
+      }
+    ],
+    "2508.00031": [
+      {
+        "id": "2608.31057",
+        "score": 0.7472702459124705,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2606.28434",
+        "score": 0.7201353247836432,
+        "shared": [
+          "context"
+        ]
+      },
+      {
+        "id": "2608.20342",
+        "score": 0.7085848636911727,
+        "shared": [
+          "context",
+          "repository",
+          "collaboration"
+        ]
+      },
+      {
+        "id": "2512.22087",
+        "score": 0.6995111319384922,
+        "shared": [
+          "context"
+        ]
+      }
+    ]
+  },
+  "clustering": {
+    "algorithm": "average-linkage agglomerative",
+    "threshold": 0.64,
+    "metric": "cosine",
+    "singletonPolicy": "Keep singleton groups; never force an unrelated paper into a cluster"
+  },
+  "clusters": [
+    {
+      "id": "group-01",
+      "papers": [
+        "2508.00031",
+        "2512.22087",
+        "2601.07190",
+        "2605.30842",
+        "2606.28434",
+        "2608.20342",
+        "2608.31057"
+      ],
+      "representative": "2606.28434",
+      "cohesion": 0.6866026635078347,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "group-02",
+      "papers": [
+        "2510.01003",
+        "2605.14563",
+        "2608.20685"
+      ],
+      "representative": "2510.01003",
+      "cohesion": 0.6639623117095487,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Repository knowledge",
+      "dominantCategories": [
+        "repository",
+        "context"
+      ]
+    },
+    {
+      "id": "group-03",
+      "papers": [
+        "2605.08468",
+        "2605.25430",
+        "2608.06153"
+      ],
+      "representative": "2608.06153",
+      "cohesion": 0.6892185419526139,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Memory governance",
+      "dominantCategories": [
+        "governance",
+        "skills"
+      ]
+    },
+    {
+      "id": "group-04",
+      "papers": [
+        "2405.15793",
+        "2606.23752"
+      ],
+      "representative": "2405.15793",
+      "cohesion": 0.6498086611987479,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Memory governance",
+      "dominantCategories": [
+        "governance",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "group-05",
+      "papers": [
+        "2505.23422",
+        "2609.23570"
+      ],
+      "representative": "2505.23422",
+      "cohesion": 0.6710537424396767,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Evaluation & limits",
+      "dominantCategories": [
+        "evaluation",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-06",
+      "papers": [
+        "2507.00014",
+        "2608.20664"
+      ],
+      "representative": "2507.00014",
+      "cohesion": 0.6586745059685953,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Evaluation & limits",
+      "dominantCategories": [
+        "evaluation",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-07",
+      "papers": [
+        "2507.06229",
+        "2609.07357"
+      ],
+      "representative": "2507.06229",
+      "cohesion": 0.6491894918677082,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "group-08",
+      "papers": [
+        "2604.27283",
+        "2605.01567"
+      ],
+      "representative": "2604.27283",
+      "cohesion": 0.6482060475010568,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Memory governance",
+      "dominantCategories": [
+        "governance",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-09",
+      "papers": [
+        "2605.17444",
+        "2607.01916"
+      ],
+      "representative": "2605.17444",
+      "cohesion": 0.6602173711746061,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "repository"
+      ]
+    },
+    {
+      "id": "group-10",
+      "papers": [
+        "2607.14390",
+        "2609.20130"
+      ],
+      "representative": "2607.14390",
+      "cohesion": 0.6433439235469876,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-11",
+      "papers": [
+        "2608.24188",
+        "2609.22114"
+      ],
+      "representative": "2608.24188",
+      "cohesion": 0.6425143067007705,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "group-12",
+      "papers": [
+        "2303.11366"
+      ],
+      "representative": "2303.11366",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-13",
+      "papers": [
+        "2307.07924"
+      ],
+      "representative": "2307.07924",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Shared & user memory",
+      "dominantCategories": [
+        "collaboration",
+        "context"
+      ]
+    },
+    {
+      "id": "group-14",
+      "papers": [
+        "2308.00352"
+      ],
+      "representative": "2308.00352",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Shared & user memory",
+      "dominantCategories": [
+        "collaboration",
+        "context"
+      ]
+    },
+    {
+      "id": "group-15",
+      "papers": [
+        "2407.15568"
+      ],
+      "representative": "2407.15568",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Shared & user memory",
+      "dominantCategories": [
+        "collaboration",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-16",
+      "papers": [
+        "2509.25140"
+      ],
+      "representative": "2509.25140",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "skills"
+      ]
+    },
+    {
+      "id": "group-17",
+      "papers": [
+        "2510.21903"
+      ],
+      "representative": "2510.21903",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Shared & user memory",
+      "dominantCategories": [
+        "collaboration",
+        "repository"
+      ]
+    },
+    {
+      "id": "group-18",
+      "papers": [
+        "2512.10398"
+      ],
+      "representative": "2512.10398",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-19",
+      "papers": [
+        "2601.06789"
+      ],
+      "representative": "2601.06789",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-20",
+      "papers": [
+        "2602.21611"
+      ],
+      "representative": "2602.21611",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-21",
+      "papers": [
+        "2604.14004"
+      ],
+      "representative": "2604.14004",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Evaluation & limits",
+      "dominantCategories": [
+        "evaluation",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-22",
+      "papers": [
+        "2604.23069"
+      ],
+      "representative": "2604.23069",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-23",
+      "papers": [
+        "2606.08151"
+      ],
+      "representative": "2606.08151",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-24",
+      "papers": [
+        "2606.12329"
+      ],
+      "representative": "2606.12329",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-25",
+      "papers": [
+        "2607.20972"
+      ],
+      "representative": "2607.20972",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-26",
+      "papers": [
+        "2608.00122"
+      ],
+      "representative": "2608.00122",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Shared & user memory",
+      "dominantCategories": [
+        "collaboration",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-27",
+      "papers": [
+        "2608.04278"
+      ],
+      "representative": "2608.04278",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Evaluation & limits",
+      "dominantCategories": [
+        "evaluation",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-28",
+      "papers": [
+        "2608.06811"
+      ],
+      "representative": "2608.06811",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Working context",
+      "dominantCategories": [
+        "context",
+        "experience"
+      ]
+    },
+    {
+      "id": "group-29",
+      "papers": [
+        "2608.09181"
+      ],
+      "representative": "2608.09181",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-30",
+      "papers": [
+        "2608.13662"
+      ],
+      "representative": "2608.13662",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Memory governance",
+      "dominantCategories": [
+        "governance",
+        "repository"
+      ]
+    },
+    {
+      "id": "group-31",
+      "papers": [
+        "2608.21867"
+      ],
+      "representative": "2608.21867",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Experience & reflection",
+      "dominantCategories": [
+        "experience",
+        "governance"
+      ]
+    },
+    {
+      "id": "group-32",
+      "papers": [
+        "2609.05510"
+      ],
+      "representative": "2609.05510",
+      "cohesion": null,
+      "reviewStatus": "Automatically proposed; human review pending",
+      "label": "Evaluation & limits",
+      "dominantCategories": [
+        "evaluation",
+        "governance"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "experience",
+      "name": "Experience & reflection",
+      "color": "#b95735",
+      "description": "Distill previous successes and failures into lessons used on later software tasks.",
+      "papers": [
+        "2505.23422",
+        "2510.01003",
+        "2609.23570",
+        "2509.25140",
+        "2602.21611",
+        "2507.06229",
+        "2604.14004",
+        "2605.25430",
+        "2512.10398",
+        "2608.21867",
+        "2609.20130",
+        "2609.07357",
+        "2608.09181",
+        "2608.06811",
+        "2608.00122",
+        "2607.14390",
+        "2607.01916",
+        "2606.12329",
+        "2605.17444",
+        "2605.08468",
+        "2604.27283",
+        "2601.06789",
+        "2303.11366",
+        "2407.15568",
+        "2507.00014"
+      ]
+    },
+    {
+      "id": "context",
+      "name": "Working context",
+      "color": "#49786a",
+      "description": "Compress, retain, or select interaction history within long coding sessions.",
+      "papers": [
+        "2606.28434",
+        "2608.31057",
+        "2602.21611",
+        "2601.07190",
+        "2604.23069",
+        "2512.22087",
+        "2512.10398",
+        "2608.06811",
+        "2607.20972",
+        "2607.01916",
+        "2606.08151",
+        "2605.30842",
+        "2605.14563",
+        "2608.20342",
+        "2608.24188",
+        "2609.22114",
+        "2303.11366",
+        "2308.00352",
+        "2307.07924",
+        "2405.15793",
+        "2508.00031"
+      ]
+    },
+    {
+      "id": "repository",
+      "name": "Repository knowledge",
+      "color": "#647c9b",
+      "description": "Preserve codebase history, architectural decisions, and project-specific knowledge.",
+      "papers": [
+        "2505.23422",
+        "2510.01003",
+        "2609.23570",
+        "2608.13662",
+        "2605.01567",
+        "2512.10398",
+        "2510.21903",
+        "2609.05510",
+        "2608.20685",
+        "2608.04278",
+        "2607.20972",
+        "2607.14390",
+        "2607.01916",
+        "2606.23752",
+        "2606.12329",
+        "2605.17444",
+        "2605.14563",
+        "2608.20342",
+        "2601.06789",
+        "2507.00014",
+        "2508.00031"
+      ]
+    },
+    {
+      "id": "skills",
+      "name": "Procedural skills",
+      "color": "#927354",
+      "description": "Turn coding trajectories into reusable procedures and maintain a skill bank.",
+      "papers": [
+        "2509.25140",
+        "2608.06153",
+        "2604.14004",
+        "2605.25430",
+        "2609.07357",
+        "2608.09181",
+        "2605.17444",
+        "2605.08468"
+      ]
+    },
+    {
+      "id": "governance",
+      "name": "Memory governance",
+      "color": "#8b6b94",
+      "description": "Control admission, conflicts, stale records, validation, and memory lifecycle.",
+      "papers": [
+        "2606.28434",
+        "2608.06153",
+        "2608.13662",
+        "2605.01567",
+        "2608.20664",
+        "2605.25430",
+        "2601.07190",
+        "2604.23069",
+        "2512.22087",
+        "2608.21867",
+        "2609.20130",
+        "2609.05510",
+        "2608.20685",
+        "2608.09181",
+        "2608.06811",
+        "2608.04278",
+        "2608.00122",
+        "2607.20972",
+        "2607.14390",
+        "2606.23752",
+        "2606.12329",
+        "2606.08151",
+        "2605.08468",
+        "2604.27283",
+        "2608.24188",
+        "2601.06789",
+        "2405.15793"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "name": "Evaluation & limits",
+      "color": "#627b85",
+      "description": "Measure memory utility, failure modes, and downstream executable software outcomes.",
+      "papers": [
+        "2505.23422",
+        "2609.23570",
+        "2608.31057",
+        "2608.20664",
+        "2604.14004",
+        "2609.05510",
+        "2608.20685",
+        "2608.04278",
+        "2609.22114",
+        "2507.00014"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "name": "Shared & user memory",
+      "color": "#9b8544",
+      "description": "Share experience across agent frameworks or retain user intent across coding tasks.",
+      "papers": [
+        "2507.06229",
+        "2510.21903",
+        "2608.00122",
+        "2606.23752",
+        "2605.30842",
+        "2608.20342",
+        "2308.00352",
+        "2407.15568",
+        "2307.07924",
+        "2508.00031"
+      ]
+    }
+  ],
+  "review": "Source-checked mechanism labels; independent human review pending. Semantic neighbors are automatically suggested."
+}

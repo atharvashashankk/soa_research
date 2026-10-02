@@ -150,7 +150,7 @@ try{
   });
   await check('mobile collection, findings and detail layouts have no horizontal overflow',async()=>{
     await page.setViewportSize({width:390,height:844});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);
-    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile.png',root)),fullPage:false});
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),JSON.stringify(await page.evaluate(()=>({width:window.innerWidth,scrollWidth:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('body *')].filter(el=>{const r=el.getBoundingClientRect();return r.right>window.innerWidth+1||r.left< -1}).slice(0,12).map(el=>({tag:el.tagName,className:typeof el.className==='string'?el.className:'',text:el.textContent?.trim().slice(0,55),left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right}))}))));await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile.png',root)),fullPage:false});
     await page.goto(`${base}findings.html`);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile-findings.png',root)),fullPage:false});
     await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);

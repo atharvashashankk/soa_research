@@ -1,6 +1,9 @@
 # Agent Memory Atlas
 
-A static website for a Virginia Tech research study of memory management in software development agents, ready for GitHub Pages.
+A static website for a Virginia Tech research study of memory management in software development agents.
+
+**Website:** https://atharvashashankk.github.io/soa_research/  
+**Source:** https://github.com/atharvashashankk/soa_research
 
 The current snapshot contains **50 primary-source-checked papers**, **7 overlapping memory families**, and **32 automatically proposed semantic groups**. It includes an extended, source-linked research synthesis (`findings.html` in the built site), search, combined filters, paper pages, memory lifecycle descriptions, related papers, a browser reading list, and JSON/CSV/BibTeX exports. The visual design uses a restrained academic layout and colors from [Virginia Tech's color guide](https://brand.vt.edu/content/brand_vt_edu/en/identity/color.html); it does not use a university logo.
 
@@ -106,7 +109,7 @@ npx playwright install --with-deps chromium
 
 On Windows, tests use an installed Chrome browser when available. Otherwise install Playwright Chromium, or set `BROWSER_EXECUTABLE` to a compatible browser path.
 
-The final run passed **13 pipeline tests and 25 E2E checks**. E2E covers search, combined filters, URL persistence, sorting, reading-list retention and removal, exports, citations, categories, semantic groups, every local link, Pages project paths, keyboard focus, 320/390/768px layouts, data-load failures, JavaScript-disabled browsing, runtime network independence, console errors, and WCAG 2/2.1 AA audits of the main page types. Automated accessibility checks do not replace assistive-technology review.
+The final run passed **13 pipeline tests and 26 E2E checks**. E2E covers search, combined filters, URL persistence, sorting, reading-list retention and removal, exports, citations, categories, semantic groups, every local link, Pages project paths, keyboard focus, 320/390/768px layouts, data-load failures, JavaScript-disabled browsing, runtime network independence, console errors, and WCAG 2/2.1 AA audits of the main page types. Automated accessibility checks do not replace assistive-technology review.
 
 Screenshots and JSON verification reports are in `artifacts/`. GitHub Actions uploads those reports for each run.
 

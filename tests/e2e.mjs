@@ -149,16 +149,16 @@ try{
     await page.locator('h1').click();await page.keyboard.press('/');assert.equal(await page.evaluate(()=>document.activeElement.id),'search');
   });
   await check('mobile collection, findings and detail layouts have no horizontal overflow',async()=>{
-    await page.setViewportSize({width:390,height:844});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);
-    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),JSON.stringify(await page.evaluate(()=>({width:window.innerWidth,scrollWidth:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('body *')].filter(el=>{const r=el.getBoundingClientRect();return r.right>window.innerWidth+1||r.left< -1}).slice(0,12).map(el=>({tag:el.tagName,className:typeof el.className==='string'?el.className:'',text:el.textContent?.trim().slice(0,55),left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right}))}))));await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile.png',root)),fullPage:false});
-    await page.goto(`${base}findings.html`);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+    await page.setViewportSize({width:390,height:844});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);await page.evaluate(()=>document.fonts.ready);
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile.png',root)),fullPage:false});
+    await page.goto(`${base}findings.html`);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile-findings.png',root)),fullPage:false});
     await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);
-    await page.getByRole('searchbox',{name:'Search papers'}).fill('ToM-SWE');assert.equal(await page.locator('#paper-grid article:visible').count(),1);await page.getByRole('link',{name:papers.find(p=>p.short==='ToM-SWE').title,exact:true}).click();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+    await page.getByRole('searchbox',{name:'Search papers'}).fill('ToM-SWE');assert.equal(await page.locator('#paper-grid article:visible').count(),1);await page.getByRole('link',{name:papers.find(p=>p.short==='ToM-SWE').title,exact:true}).click();await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile-paper.png',root)),fullPage:true});
   });
   await check('small mobile and tablet remain within the viewport',async()=>{
-    for(const width of [320,768]){await page.setViewportSize({width,height:900});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),`Overflow at ${width}`);}
+    for(const width of [320,768]){await page.setViewportSize({width,height:900});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),`Overflow at ${width}`);}
   });
   await check('a failed dataset request preserves static papers with an error message',async()=>{
     const failurePage=await context.newPage();await failurePage.route('**/data/papers.json',route=>route.fulfill({status:503,body:'Unavailable'}));await failurePage.goto(base);await failurePage.locator('#data-error').waitFor({state:'visible'});assert.equal(await failurePage.locator('#paper-grid article').count(),papers.length);assert.ok(await failurePage.getByRole('searchbox',{name:'Search papers'}).isDisabled());await failurePage.close();

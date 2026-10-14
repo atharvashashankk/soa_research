@@ -1,5 +1,13 @@
 # Agent Memory Research Project
 
+## Expansion update (2026-10-13)
+
+The curated snapshot now contains 94 papers, including 44 selected from the archived arXiv Atom candidate set, plus a separate library of 11 GitHub harness and memory projects. Seven overlapping research tags and source-linked storage categories were applied to the paper additions. The local embedding analysis now proposes 58 semantic groups. The synthesis adds sections on claim-level validity and turning retained experience into behavior. The requested ceiling is 249 papers; quality screening, full-text extraction, independent human review, and broader venue searches remain outstanding.
+
+## Research-process update (2026-10-03)
+
+The same three arXiv queries were paginated for the existing 2026-09-27 cutoff. They returned 1,699 unique candidates; the unified ledger now has 50 included, 2 excluded, 5 background, and 1,650 pending records. The site retains the original 50-paper snapshot. Search rounds, a coding guide, claim-level extraction forms, group-review forms, threshold sensitivity, model artifact hashes, and publication citation metadata are recorded under `research/`. Independent human screening and full-text review, broader venue/citation searches, and validation of semantic groups remain outstanding. See `research/SEARCH_PLAN.md` and `research/CODING_GUIDE.md` for the next research steps.
+
 Status: implementation authorized by the project owner on 2026-09-27. Initial website and research pipeline built and tested. GitHub Pages publication awaits a repository destination and authenticated GitHub access.
 
 ## Implementation status
@@ -12,7 +20,7 @@ Status: implementation authorized by the project owner on 2026-09-27. Initial we
 - Built static paper, category, semantic group, and methodology pages with search, filters, reading lists, and data exports.
 - Passed 13 pipeline tests and 25 browser E2E checks, including GitHub Pages project paths, responsive layouts, and automated WCAG audits.
 - Added a GitHub Actions build/test/deploy workflow and setup documentation.
-- Outstanding research work: independent human review, more full-text extraction, broader source coverage, and the 100-paper expansion goal. These are reported openly in the site methodology.
+- Outstanding research work: independent human review, more full-text extraction, broader source coverage, and progress toward the requested 249-paper ceiling. These are reported openly in the site methodology.
 - Outstanding publication work: supply a GitHub repository and authenticated access, then run and inspect the live deployment.
 
 ## Objective

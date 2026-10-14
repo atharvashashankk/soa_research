@@ -1,0 +1,19 @@
+.projects-main .page-intro{max-width:850px}
+.project-jump{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 52px}
+.project-jump a{display:inline-flex;border:1px solid var(--line);padding:10px 13px;color:var(--accent);font-size:12px;font-weight:700;text-decoration:none}
+.project-jump a:hover{border-color:var(--accent)}
+.project-section{margin-bottom:58px}
+.project-section .section-heading{margin-bottom:20px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.project-card{border:1px solid var(--line);padding:24px;background:#fff;min-width:0}
+.project-card h2{font:600 20px/1.35 var(--heading);margin:8px 0 11px}
+.project-card h3{font:700 11px/1.4 var(--sans);color:var(--ink);margin:16px 0 5px;text-transform:uppercase;letter-spacing:.5px}
+.project-card p{font-size:13px;line-height:1.65;color:#454d55;margin:0 0 8px}
+.project-card .project-boundary{border-left:2px solid var(--orange);padding-left:10px;color:var(--muted);margin:14px 0}
+.project-card .tags{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}
+.project-card .project-papers{font-size:12px;margin:12px 0}
+.project-card a{color:var(--accent);text-underline-offset:2px}
+.project-card .project-papers a{text-decoration:underline}
+.project-links{display:flex;flex-wrap:wrap;gap:12px 18px;border-top:1px solid var(--line);padding-top:14px;margin-top:16px;font-size:12px;font-weight:700}
+@media(max-width:720px){.project-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.project-card{padding:18px}.project-jump{margin:20px 0 36px}}

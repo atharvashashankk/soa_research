@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "cutoff": "2026-09-27",
   "start": "2023-01-01",
   "pilotTarget": 20,
-  "expansionTarget": 100,
+  "expansionTarget": 249,
   "scope": "Memory management in LLM agents for software development",
   "queries": [
     "(all:\"software engineering\" OR all:\"coding agent\") AND (all:memory OR all:\"context management\")",
@@ -29,7 +29,14 @@
     {"name":"ICLR proceedings","role":"Verify Repository Memory conference publication"},
     {"name":"Google Research / OpenReview","role":"Author's primary research announcement verifies ReasoningBank conference status; OpenReview link retained, direct API requires challenge verification"}
   ],
+  "searchHistory": [
+    {"date":"2026-09-27","source":"arXiv Atom API","limit":"First 100 newest results for each of three queries","uniqueCandidates":267,"status":"Historical targeted search; incomplete coverage"},
+    {"date":"2026-10-03","source":"arXiv Atom API","limit":"Paginated three historical queries through all reported results for the same 2026-09-27 cutoff","uniqueCandidates":1699,"status":"Candidate queue; screening continues. API page overlap left one record below the first query's reported total."},
+    {"date":"2026-10-13","source":"Archived 2026-10-03 arXiv Atom candidate set","limit":"Title and abstract screening of relevant candidates against the existing scope; 44 included in this round","uniqueCandidates":44,"status":"94-paper targeted corpus; 1606 discovery records remain pending screening. Human full-text review remains pending."}
+  ],
+  "screening": "The screening ledger distinguishes included, excluded, background, and pending records. Legacy decisions without a documented discovery route are retained and flagged. No unscreened discovery match is counted as excluded.",
+  "codingGuide": "research/CODING_GUIDE.md",
   "similarity": {"model":"Xenova/all-MiniLM-L6-v2","dtype":"q8","pooling":"mean","normalize":true,"metric":"cosine","neighbors":4,"clusterThreshold":0.64,"text":"summary, memory representation, lifecycle descriptions, workflow stages","grouping":"Deterministic average-linkage agglomerative clustering at cosine similarity 0.64, alongside overlapping source-based mechanism labels; automatic groups require human review"},
-  "review": "Agent-assisted extraction checked against primary-source abstracts; independent human review pending. Full-text evidence used only when explicitly recorded.",
+  "review": "Agent-assisted extraction checked against primary-source abstracts or cited full-text sections. Claim-level extraction forms and group-review forms exist; independent human review and adjudication are pending.",
   "coverage": "A focused initial collection, not a systematic or exhaustive review. Search coverage and counts are reported in the collection manifest."
 }

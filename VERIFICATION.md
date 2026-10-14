@@ -1,5 +1,13 @@
 # Verification record
 
+## 2026-10-13 expansion
+
+Added 44 papers from the archived 2026-10-03 arXiv Atom candidate set, reaching 94 source-linked records under the requested 249-paper ceiling. Each addition has a versioned primary-source link, abstract hash, storage categories, and a pending human extraction-review form. The screening ledger now has 94 inclusions, 7 other decisions, and 1,606 pending records. Local embeddings produced 58 proposed semantic groups; group-review forms and threshold sensitivity were regenerated. A separate catalog links 11 GitHub coding harnesses and memory layers to their repository evidence and related papers. The findings page adds claim-level validity and conversion of experience into coding behavior. The static build generated 94 paper pages and a project catalog page. All 17 pipeline tests and 27 browser E2E checks, including local-link and accessibility checks, passed. This remains a targeted abstract-heavy map; independent human and broader-venue review are pending.
+
+## 2026-10-03 update
+
+The historical three arXiv queries were paginated at the same 2026-09-27 cutoff, yielding 1,699 unique candidates. The 50-paper published corpus was unchanged. The unified screening ledger records 1,650 pending cases. A sensitivity analysis shows 22 to 45 semantic groups across thresholds 0.58 to 0.70, compared with 32 at the chosen 0.64. Sixteen pipeline tests and 26 browser E2E checks passed after the research-process changes. The separate agent-browser CLI could not establish a Chrome CDP connection; the Playwright E2E suite completed the browser checks. No independent human review has been recorded.
+
 Date: 2026-09-27
 
 ## Executed flow

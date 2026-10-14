@@ -9,8 +9,13 @@
   },
   "scripts": {
     "collect": "node scripts/collect.mjs",
+    "expand:archived": "node scripts/expand-archived.mjs",
     "discover": "node scripts/collect.mjs --discover",
+    "screening:reconcile": "node scripts/screening.mjs",
+    "extraction:init": "node scripts/init-extraction-review.mjs",
+    "publication:sync": "node scripts/sync-publication-metadata.mjs",
     "analyze": "node scripts/analyze.mjs",
+    "similarity:audit": "node scripts/audit-similarity.mjs",
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
     "test": "node --test tests/pipeline.test.mjs",

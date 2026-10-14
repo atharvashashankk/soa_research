@@ -1,0 +1,48 @@
+{
+  "inputHash": "d9ffcb05ac8018e9a8e624f523e9e3d2fa334bee08e238c339ca05924fc63366",
+  "method": "Same embeddings and average-linkage algorithm; only the merge threshold varies. Descriptive sensitivity, not external validation.",
+  "results": [
+    {
+      "threshold": 0.58,
+      "groups": 36,
+      "singletons": 18,
+      "largest": 11
+    },
+    {
+      "threshold": 0.6,
+      "groups": 39,
+      "singletons": 18,
+      "largest": 11
+    },
+    {
+      "threshold": 0.62,
+      "groups": 48,
+      "singletons": 27,
+      "largest": 8
+    },
+    {
+      "threshold": 0.64,
+      "groups": 58,
+      "singletons": 36,
+      "largest": 6
+    },
+    {
+      "threshold": 0.66,
+      "groups": 68,
+      "singletons": 52,
+      "largest": 6
+    },
+    {
+      "threshold": 0.68,
+      "groups": 76,
+      "singletons": 64,
+      "largest": 6
+    },
+    {
+      "threshold": 0.7,
+      "groups": 78,
+      "singletons": 68,
+      "largest": 6
+    }
+  ]
+}

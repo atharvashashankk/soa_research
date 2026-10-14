@@ -5,13 +5,17 @@ A static website for a Virginia Tech research study of memory management in soft
 **Website:** https://atharvashashankk.github.io/soa_research/  
 **Source:** https://github.com/atharvashashankk/soa_research
 
-The current snapshot contains **50 primary-source-checked papers**, **7 overlapping memory families**, and **32 automatically proposed semantic groups**. It includes an extended, source-linked research synthesis (`findings.html` in the built site), search, combined filters, paper pages, memory lifecycle descriptions, related papers, a browser reading list, and JSON/CSV/BibTeX exports. The visual design uses a restrained academic layout and colors from [Virginia Tech's color guide](https://brand.vt.edu/content/brand_vt_edu/en/identity/color.html); it does not use a university logo.
+The current snapshot contains **94 agent-source-checked papers**, **11 source-linked GitHub projects**, **7 overlapping research tags across different axes**, and **58 automatically proposed semantic groups**. It includes an extended research synthesis, search, combined filters, paper pages, a separate harness and memory project library, related papers, a browser reading list, and JSON/CSV/BibTeX exports. The visual design uses a restrained academic layout and colors from [Virginia Tech's color guide](https://brand.vt.edu/content/brand_vt_edu/en/identity/color.html); it does not use a university logo.
 
 ## Memory storage categories
 
 Browse `storage.html` or use the **Memory storage category** filter. Categories describe the source-linked form of retained memory: notes and documents, structured records, event and interaction histories, linked knowledge, experience and skill banks, working context and summaries, and named databases or search indexes. A paper can belong to several categories. Each paper page shows the representation behind its labels.
 
-Exact file formats and backends, such as `.md`, `.jsonl`, or SQLite, are tracked separately and shown only when supported by explicit evidence. They are established for three papers; the other 47 have representation categories but no verified exact format. Category assignments and exact-format evidence live in `research/storage.mjs` and require review when the corpus changes.
+Exact file formats and backends, such as `.md`, `.jsonl`, JSON, or SQLite, are tracked separately and shown only when supported by explicit evidence. They are established for four papers; the other 90 have representation categories but no verified exact format. Category assignments and exact-format evidence live in `research/storage.mjs` and require review when the corpus changes.
+
+## GitHub projects
+
+Browse `projects.html` for six coding harnesses or combined harness-memory systems and five memory layers. Each entry links to its repository, evidence for the described capability, relevant research tags, and conceptually related papers. These implementation entries are separate from the paper count and semantic clusters; a related paper link does not mean it evaluated the project. Selection rules are in [research/PROJECTS.md](research/PROJECTS.md).
 
 ## Preview
 
@@ -61,10 +65,12 @@ npm run analyze
 npm run check
 ```
 
-- **Discover:** queries the official arXiv Atom API and saves a separate candidate queue. The initial discovery retrieved up to the latest 100 results per query, producing 267 unique candidates. This limit is a coverage boundary, not an exhaustive search.
-- **Screen:** inspect candidate sources and add justified records to `research/curation.mjs` or `research/expansion.mjs`. Add verified publication links separately. Discovery matches are never automatically published.
+To replay the screened October 2026 additions from the saved arXiv Atom candidate archive, run `npm run expand:archived` before analysis. The project catalog is maintained separately in `research/projects.json`.
+
+- **Discover:** queries and paginates the official arXiv Atom API, saving a timestamped search round. The historical 2026-09-27 search retrieved only the latest 100 results per query and produced 267 unique candidates. A 2026-10-03 paginated rerun with the same cutoff yielded 1,699 unique candidates. API page overlap left one record below the first query's reported total; this is still not exhaustive coverage.
+- **Screen:** record candidate decisions, specific reasons, reviewer, date, and discovery route in `research/screening-ledger.json`. The reconciled ledger has 94 inclusions, 7 other decisions, and 1,606 pending records; 22 legacy decisions have no documented original discovery route. Add justified included records to the curation modules. Discovery matches are never automatically published.
 - **Collect:** fetches primary metadata, deduplicates identifiers and titles, checks dates, verifies alternate publication sources, and saves source hashes and inclusion/exclusion decisions. It prefers the Atom API and falls back to rate-limited abstract-page scraping. Requests are cached and retried.
-- **Analyze:** downloads free embedding weights on first use, then runs locally. It embeds consistent method descriptions with `Xenova/all-MiniLM-L6-v2`, computes cosine neighbors, and generates deterministic average-linkage groups at a 0.64 threshold. The embedding cache includes the exact input text and configuration hash.
+- **Analyze:** downloads free embedding weights on first use, then runs locally. It embeds consistent method descriptions with `Xenova/all-MiniLM-L6-v2`, computes cosine neighbors, and generates deterministic average-linkage groups at a 0.64 threshold. The embedding cache key hashes the exact input text and configuration; `research/model-artifacts.json` records and checks the model-file hashes on a fresh embedding run.
 - **Check:** validates records and analysis, builds all pages, and tests browser behavior. Builds reject outdated similarity input hashes.
 
 To refresh cached source requests:
@@ -85,9 +91,15 @@ Full text is retained in the private `.cache/` directory and is not redistribute
 
 ## Evidence boundaries
 
-The collection is a targeted research snapshot, not a systematic review. Forty-seven records use abstract evidence; three use cited full-text sections. The coding agent checked the extraction against sources; independent human review is pending. Automatic similarity groups and neighbors also require human review. Unknown lifecycle operations remain unspecified. Preprint status is the default unless a linked publication has been verified.
+The [search plan](research/SEARCH_PLAN.md) documents the two arXiv search rounds and sources still to search.
 
-The initial 20-paper pilot was expanded to 50 relevant papers. The plan's 100-paper expansion target remains future work; unrelated matches have not been added to reach it. Candidate screening and broader venue discovery should precede another expansion.
+The [coding guide](research/CODING_GUIDE.md) defines the tagging axes and claim-level evidence rule. `research/extraction-review.json` contains 94 structured claim review forms, and `research/similarity-review.json` contains 58 group review forms. Neither file asserts that independent human review has happened. `research/similarity-sensitivity.json` reports how the number of groups changes across thresholds from 0.58 to 0.70. Published citation metadata is separate from the arXiv version used for extraction in `research/publication-metadata.json`; unknown DOIs remain unknown.
+
+After a new discovery round, run `npm run screening:reconcile`. Complete pending decisions and full-text review forms before describing the expanded corpus as screened. The existing 2026-09-27 discovery log and candidate set are preserved under `research/search-rounds/`.
+
+The collection is a targeted research snapshot, not a systematic review. Ninety-one records use abstract evidence; three use cited full-text sections. The coding agent checked the extraction against sources; independent human review is pending. Automatic similarity groups and neighbors also require human review. Unknown lifecycle operations remain unspecified. Preprint status is the default unless a linked publication has been verified.
+
+The initial 20-paper pilot has grown to 94 relevant papers. The requested target is just under 250; the remaining candidate queue needs screening, and unrelated matches have not been added to reach a count. The October 2026 addition used versioned abstracts from the archived arXiv Atom discovery round. See `research/expansion-2026-10.mjs` and `scripts/expand-archived.mjs`.
 
 Group labels come from the most frequent mechanism family among their members. Singleton groups remain separate rather than forcing an unrelated paper into a cluster. Similarity scores are not probabilities, measures of comparable performance, or scientific significance tests.
 
@@ -109,7 +121,7 @@ npx playwright install --with-deps chromium
 
 On Windows, tests use an installed Chrome browser when available. Otherwise install Playwright Chromium, or set `BROWSER_EXECUTABLE` to a compatible browser path.
 
-The final run passed **13 pipeline tests and 26 E2E checks**. E2E covers search, combined filters, URL persistence, sorting, reading-list retention and removal, exports, citations, categories, semantic groups, every local link, Pages project paths, keyboard focus, 320/390/768px layouts, data-load failures, JavaScript-disabled browsing, runtime network independence, console errors, and WCAG 2/2.1 AA audits of the main page types. Automated accessibility checks do not replace assistive-technology review.
+The updated pipeline passes **17 tests and 27 E2E checks**. E2E covers search, combined filters, URL persistence, sorting, reading-list retention and removal, exports, citations, paper and project links, categories, semantic groups, every local link, Pages project paths, keyboard focus, 320/390/768px layouts, data-load failures, JavaScript-disabled browsing, runtime network independence, console errors, and WCAG 2/2.1 AA audits of the main page types. Automated accessibility checks do not replace assistive-technology review.
 
 Screenshots and JSON verification reports are in `artifacts/`. GitHub Actions uploads those reports for each run.
 
@@ -118,6 +130,8 @@ Screenshots and JSON verification reports are in `artifacts/`. GitHub Actions up
 - `PLAN.md`: agreed scope and implementation status.
 - `research/protocol.json`: dates, criteria, queries, and similarity settings.
 - `research/curation.mjs`, `research/expansion.mjs`: source-checked interpretations.
+- `research/expansion-2026-10.mjs`, `scripts/expand-archived.mjs`: archived-source paper expansion.
+- `research/projects.json`, `research/PROJECTS.md`: source-linked GitHub harness and memory project catalog.
 - `research/papers.json`: canonical publishable records.
 - `research/collection-log.json`: source requests, hashes, and screening decisions.
 - `research/candidates.json`, `research/discovery-log.json`: separate discovery queue and request log.

@@ -1,0 +1,46 @@
+{
+  "2505.23422": {
+    "citationStatus": "published metadata verified",
+    "title": "From Knowledge to Noise: CTIM-Rover and the Pitfalls of Episodic Memory in Software Engineering Agents",
+    "authors": ["Tobias Lindenbauer", "Georg Groh", "Hinrich Schuetze"],
+    "booktitle": "Proceedings of the 1st Workshop for Research on Agent Language Models (REALM 2025)",
+    "year": 2025,
+    "pages": "411--427",
+    "publisher": "Association for Computational Linguistics",
+    "doi": "10.18653/v1/2025.realm-1.30",
+    "url": "https://aclanthology.org/2025.realm-1.30/"
+  },
+  "2510.01003": {
+    "citationStatus": "published metadata verified",
+    "title": "Improving Code Localization with Repository Memory",
+    "authors": ["Boshi Wang", "Weijian Xu", "Yunsheng Li", "Xuemei Gao", "Yujia Xie", "Huan Sun", "Dongdong Chen"],
+    "booktitle": "International Conference on Learning Representations",
+    "year": 2026,
+    "doi": null,
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/b4c06f095368497f3ac19422efef8133-Abstract-Conference.html",
+    "note": "The proceedings lists Xuemei Gao; the linked arXiv metadata currently lists Mei Gao."
+  },
+  "2509.25140": {
+    "citationStatus": "conference claim supported by author announcement; proceedings metadata unverified",
+    "url": "https://openreview.net/forum?id=jL7fwchScm",
+    "verificationUrl": "https://www.research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/"
+  },
+  "2303.11366": {
+    "citationStatus": "published metadata verified",
+    "title": "Reflexion: language agents with verbal reinforcement learning",
+    "authors": ["Noah Shinn", "Federico Cassano", "Ashwin Gopinath", "Karthik Narasimhan", "Shunyu Yao"],
+    "booktitle": "Advances in Neural Information Processing Systems 36",
+    "year": 2023,
+    "doi": "10.52202/075280-0377",
+    "url": "https://papers.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html"
+  },
+  "2308.00352": {
+    "citationStatus": "published metadata verified",
+    "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+    "authors": ["Sirui Hong", "Mingchen Zhuge", "Jonathan Chen", "Xiawu Zheng", "Yuheng Cheng", "Jinlin Wang", "Ceyao Zhang", "zili wang", "Steven Yau", "Zijuan Lin", "Liyang Zhou", "Chenyu Ran", "Lingfeng Xiao", "Chenglin Wu", "Jürgen Schmidhuber"],
+    "booktitle": "International Conference on Learning Representations",
+    "year": 2024,
+    "doi": null,
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html"
+  }
+}

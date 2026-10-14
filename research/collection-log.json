@@ -1,11 +1,11 @@
 {
-  "collectedAt": "2026-09-27T08:27:18.878Z",
+  "collectedAt": "2026-10-13T19:50:35.093Z",
   "cutoff": "2026-09-27",
-  "protocolVersion": "1.0.0",
-  "count": 50,
+  "protocolVersion": "1.2.0",
+  "count": 94,
   "pilotTarget": 20,
-  "expansionTarget": 100,
-  "method": "Targeted search and primary-source metadata collection; curated initial collection, not exhaustive",
+  "expansionTarget": 249,
+  "method": "Targeted primary-source collection plus reviewed additions from archived arXiv Atom discovery round; not exhaustive",
   "requests": [
     {
       "url": "https://export.arxiv.org/api/query?id_list=2505.23422,2510.01003,2609.23570,2606.28434,2509.25140,2608.06153,2608.13662,2605.01567,2608.31057,2602.21611,2608.20664,2507.06229,2604.14004,2605.25430,2601.07190,2604.23069,2512.22087,2512.10398,2510.21903,2608.21867,2609.20130,2609.07357,2609.05510,2608.20685,2608.09181,2608.06811,2608.04278,2608.00122,2607.20972,2607.14390,2607.01916,2606.23752,2606.12329,2606.08151,2605.30842,2605.17444,2605.14563,2605.08468,2608.20342,2604.27283,2608.24188,2609.22114,2601.06789,2303.11366,2308.00352,2407.15568,2507.00014,2307.07924,2405.15793,2508.00031&max_results=50",
@@ -344,6 +344,232 @@
       "id": "2510.04618",
       "decision": "background",
       "reason": "Agent and finance memory framework; explicit software-development evaluation not established by the abstract"
+    },
+    {
+      "id": "2608.16630",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2606.13174",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2605.18284",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2604.24222",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2606.05720",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2605.18854",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.27277",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.26664",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.06358",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.13258",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2602.20478",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2602.14293",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2602.08316",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2601.02868",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2510.23010",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2508.21433",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2506.10484",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2605.11051",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2604.13725",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.28119",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2601.16746",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2606.05646",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2604.09515",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.20050",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.25130",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2608.15071",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.08318",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.17826",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2606.14445",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2605.24657",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2605.04050",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2607.29422",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.01861",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2608.10450",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2603.00822",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2511.08301",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2604.11641",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2607.25032",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2607.09493",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2607.02579",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2608.10178",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.00546",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2609.20804",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
+    },
+    {
+      "id": "2512.21354",
+      "decision": "include",
+      "reason": "Explicit software-development agent memory method or memory evaluation in the archived primary-source abstract."
     }
-  ]
+  ],
+  "archivedExpansion": {
+    "archive": "research/search-rounds/2026-10-03T21-10-47-474Z-candidates.json",
+    "date": "2026-10-13",
+    "count": 44,
+    "method": "Agent title/abstract screening and source-version-linked extraction; human review pending"
+  }
 }

@@ -1,5 +1,6 @@
 import { classifyStorage } from './storage.mjs';
 import { expandedRows } from './expansion.mjs';
+import { additionalCuration } from './expansion-2026-10.mjs';
 // Project interpretations, checked against primary sources. Metadata is scraped separately.
 // Unknown lifecycle policies are intentionally left unclaimed.
 const record = (id, short, categories, stages, summary, representation, write, retrieve, update, forget, evaluation, limitations, setting = 'single') => ({
@@ -92,7 +93,8 @@ export const curation = [
     'Attaches verifier-derived confidence and uncertainty to candidate experiences. These signals persist through admission, retrieval, conflict handling, summarization, and archival instead of serving only as a one-time filter.',
     'Experience records with persistent verification metadata', 'Verify candidates before activating them', 'Use persistent verifier descriptors during retrieval', 'Resolve conflicts and summarize using verifier metadata', 'Archive memories as part of lifecycle governance',
     'Terminal-Bench 2.0, SWE-bench Verified, and web benchmarks', 'Evidence comes from a defined set of backbones and matched runtime budgets; it is not a universal guarantee.'),
-  ...expandedRows.map(args=>record(...args))
+  ...expandedRows.map(args=>record(...args)),
+  ...additionalCuration
 ];
 
 Object.assign(curation.find(p=>p.id==='2308.00352'),{evidenceDepth:'full-text',evidenceLocator:'Section 3.2: Communication Protocol; Figure 2',evidencePath:'html',reviewStatus:'Agent source-check of cited full-text section complete; human review pending'});

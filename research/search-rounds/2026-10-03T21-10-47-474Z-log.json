@@ -1,0 +1,145 @@
+{
+  "collectedAt": "2026-10-03T21:10:47.474Z",
+  "queries": [
+    "(all:\"software engineering\" OR all:\"coding agent\") AND (all:memory OR all:\"context management\")",
+    "(all:\"SWE-bench\" OR all:\"code agent\") AND (all:memory OR all:\"experience reuse\" OR all:\"skill bank\")",
+    "(all:\"software engineering\" OR all:\"coding agents\") AND (all:\"reflection\" OR all:\"persistent notes\" OR all:\"context compression\")"
+  ],
+  "queryResults": [
+    {
+      "query": "(all:\"software engineering\" OR all:\"coding agent\") AND (all:memory OR all:\"context management\")",
+      "reportedTotal": 911,
+      "retrievedRaw": 918,
+      "uniqueRetrieved": 910,
+      "pageOverlap": 8,
+      "pages": 10
+    },
+    {
+      "query": "(all:\"SWE-bench\" OR all:\"code agent\") AND (all:memory OR all:\"experience reuse\" OR all:\"skill bank\")",
+      "reportedTotal": 164,
+      "retrievedRaw": 170,
+      "uniqueRetrieved": 164,
+      "pageOverlap": 6,
+      "pages": 2
+    },
+    {
+      "query": "(all:\"software engineering\" OR all:\"coding agents\") AND (all:\"reflection\" OR all:\"persistent notes\" OR all:\"context compression\")",
+      "reportedTotal": 820,
+      "retrievedRaw": 827,
+      "uniqueRetrieved": 820,
+      "pageOverlap": 7,
+      "pages": 9
+    }
+  ],
+  "cutoff": "2026-09-27",
+  "count": 1699,
+  "coverageCaveat": "API page overlap can leave a gap relative to reported totals; records were deduplicated by identifier. This is not an exhaustive search.",
+  "requests": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "b0963bb2cf222b3c356277f7d3578dff72ac992fd8469ef95a8fba272d926365"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "b7341301b9681579eefc4f1a68203330d25a1471f3448e66cdf6ae4c8d51ef17"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=200&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "e48638ad718918a8c7b75ae44f68f68f5a4072d91449bd8d1e5009205a1f50d9"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "4a9bb952787ec10f5fdc899f4339d6ab163483892d9057558eafa859ce1d64b9"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=400&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "240f0bf476d43801c3e6b65ae47eb5a1843abf8d256ee93cf24b4a02f7c07031"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "319cf08f3aa02a79a03067010cca2eb1f7cd2b56b15222898b4c95864be832b0"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "da60482a12187360495fc9424e92fcf174812b8d3c7a856fd3ac176b195193fe"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "647105e48b91e036e3aca99ec464d5cf0fbf06dfe38a6453d30ea3f2d887907b"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=800&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "fc6550d4d7d1aab812bb166ffcd73fef15deb30bd9bbb212d79893b1d306ab38"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22context%20management%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=900&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "bb8f0b43a4fb299568fc9be87eae38ac785d804700da7260a79b76b1060007b5"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22SWE-bench%22%20OR%20all%3A%22code%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22experience%20reuse%22%20OR%20all%3A%22skill%20bank%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "3de103cdf2b0baa3bcc4df3f5fa1202f085b182c774fb6a236f9b02019f1efa2"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22SWE-bench%22%20OR%20all%3A%22code%20agent%22)%20AND%20(all%3Amemory%20OR%20all%3A%22experience%20reuse%22%20OR%20all%3A%22skill%20bank%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "f743ff2822cc4e9d3c7465de8366f240c125b11328a4b96e779276420bf26f67"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "2a447b06585d9b056a8299f155f030ba9e764adaea79955f4f64696b33c63c82"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "411a5bc2aafb4cc01e6d1d8881f17650d826e1bdc5eb57eb7eae7ef4d6f38ca4"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=200&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "d1de56cbf1ad6faa0bf40f411a51f96fa161fa5f39df31d0e3f13fa7f0b88b72"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "0e04c775ab69ae9641aa31b82e2aedf10f6420a90ff879720284c463df9479c5"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=400&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "ec8b176015ed656e3633784f8460dbb4f9a6e0e7e03fe6c8ac4b2774b4d81ae5"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "65b268857dc0be56ad70b0d47d62b699e7eebe80631a9aa764bc5e9246e8bb95"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "803c2688653e90789e3703468c1e708bb58755fd6965000839ca803528e4a967"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "c35f310fff23101032c5a8848e52c994a1ff96f81ec4bae7d20b463fd4685932"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=(all%3A%22software%20engineering%22%20OR%20all%3A%22coding%20agents%22)%20AND%20(all%3A%22reflection%22%20OR%20all%3A%22persistent%20notes%22%20OR%20all%3A%22context%20compression%22)%20AND%20submittedDate%3A%5B202301010000%20TO%20202609272359%5D&start=800&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "cached": true,
+      "sha256": "9bcbf02150399b77d3df699bb2560ddd1ef4872363a18eeddbdb54f2c6dd2792"
+    }
+  ],
+  "errors": []
+}

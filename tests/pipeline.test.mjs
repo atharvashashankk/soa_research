@@ -3,6 +3,19 @@ import {validateStorage,storageCategories} from '../research/storage.mjs';
 import assert from 'node:assert/strict';
 import { readJSON, validateCorpus, deduplicate, cosine, neighbors, clusterVectors, escapeHTML, analysisText, sha256 } from '../scripts/lib.mjs';
 const papers=await readJSON('research/papers.json'),taxonomy=await readJSON('research/taxonomy.json'),protocol=await readJSON('research/protocol.json');
+const projects=await readJSON('research/projects.json');
+test('GitHub project catalog is separate and links to real research records',()=>{
+  assert.equal(new Set(projects.map(p=>p.id)).size,projects.length);
+  assert.ok(projects.some(p=>p.role==='memory layer'));
+  assert.ok(projects.some(p=>p.role==='coding harness'));
+  for(const project of projects){
+    assert.match(project.repository,/^https:\/\/github\.com\/[^/]+\/[^/]+$/);
+    assert.ok(project.evidenceUrl.startsWith('https://github.com/'));
+    assert.ok(project.summary&&project.memoryUse&&project.fit&&project.boundary);
+    assert.ok(project.tags.every(id=>taxonomy.some(t=>t.id===id)));
+    assert.ok(project.paperIds.every(id=>papers.some(p=>p.id===id)));
+  }
+});
 test('all papers have source-linked representation categories while exact formats stay evidence-based',()=>{
   validateStorage(papers);
   assert.deepEqual(storageCategories.map(c=>c.id),['notes','records','histories','graphs','banks','context','backends']);
@@ -10,7 +23,7 @@ test('all papers have source-linked representation categories while exact format
   assert.deepEqual(papers.find(p=>p.id==='2606.23752').storageFormats,['md','json','jsonl']);
   assert.deepEqual(papers.find(p=>p.id==='2606.23752').storageCategories,['notes','records','histories']);
   assert.deepEqual(papers.find(p=>p.id==='2609.05510').storageCategories,['records','backends']);
-  assert.equal(papers.filter(p=>p.storageFormats.includes('unspecified')).length,47);
+  assert.equal(papers.filter(p=>p.storageFormats.includes('unspecified')).length,papers.length-4);
   const bad=structuredClone(papers);bad[0].storageFormats=['md'];bad[0].storageEvidence=[];
   assert.throws(()=>validateStorage(bad));
   const mismatched=structuredClone(papers);mismatched[0].storageCategories=['notes'];
@@ -72,4 +85,41 @@ test('provenance and publication status are evidence-linked',async()=>{
   assert.ok(papers.every(p=>p.abstractHash?.length===64&&p.version.match(/^v\d+$/)));
   assert.ok(papers.filter(p=>p.publication!=='Preprint').every(p=>p.alternateSources.length));
   assert.ok(log.screening.some(s=>s.decision==='exclude'&&s.reason.includes('Clinical')));
+});
+test('screening ledger distinguishes decisions from unscreened discovery matches',async()=>{
+  const ledger=await readJSON('research/screening-ledger.json');
+  const candidates=await readJSON('research/candidates.json');
+  const discovery=await readJSON('research/discovery-log.json');
+  assert.equal(new Set(ledger.map(row=>row.id)).size,ledger.length);
+  assert.equal(discovery.count,candidates.length);
+  assert.ok(discovery.queryResults.every(row=>row.retrievedRaw-row.uniqueRetrieved===row.pageOverlap&&row.pages>0));
+  assert.ok(candidates.every(candidate=>candidate.matchedQueries?.length>0));
+  assert.ok(candidates.every(candidate=>ledger.some(row=>row.id===candidate.id)));
+  assert.deepEqual(new Set(ledger.filter(row=>row.decision==='include').map(row=>row.id)),new Set(papers.map(p=>p.id)));
+  assert.ok(ledger.every(row=>row.decision==='pending'||row.reason));
+  assert.ok(ledger.filter(row=>row.decision==='pending').every(row=>!row.independentHumanReview));
+});
+test('claim and group review forms expose outstanding human checks',async()=>{
+  const extraction=await readJSON('research/extraction-review.json');
+  const groups=await readJSON('research/similarity-review.json');
+  const similarity=await readJSON('research/similarity.json');
+  assert.deepEqual(new Set(extraction.map(row=>row.id)),new Set(papers.map(p=>p.id)));
+  assert.ok(extraction.every(row=>row.claims.summary.sourceUrl&&row.claims.summary.locator));
+  assert.deepEqual(new Set(groups.map(row=>row.groupId)),new Set(similarity.clusters.map(c=>c.id)));
+  assert.ok(groups.every(row=>row.humanReviewer===null));
+});
+test('sensitivity and citation provenance match the checked-in analysis',async()=>{
+  const similarity=await readJSON('research/similarity.json');
+  const sensitivity=await readJSON('research/similarity-sensitivity.json');
+  const metadata=await readJSON('research/publication-metadata.json');
+  const model=await readJSON('research/model-artifacts.json');
+  assert.equal(sensitivity.inputHash,similarity.inputHash);
+  assert.equal(sensitivity.results.find(row=>row.threshold===protocol.similarity.clusterThreshold).groups,similarity.clusters.length);
+  assert.deepEqual(similarity.modelArtifacts,model);
+  for(const [id,publication] of Object.entries(metadata)) {
+    const paper=papers.find(p=>p.id===id);
+    assert.ok(paper);
+    assert.equal(paper.citationStatus,publication.citationStatus);
+    if(publication.doi) assert.equal(paper.doi,publication.doi);
+  }
 });

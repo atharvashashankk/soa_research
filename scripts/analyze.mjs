@@ -4,6 +4,7 @@ import { root, readJSON, writeJSON, sha256, analysisText, neighbors, clusterVect
 const papers = await readJSON('research/papers.json');
 const protocol = await readJSON('research/protocol.json');
 const taxonomy = await readJSON('research/taxonomy.json');
+const modelArtifacts = await readJSON('research/model-artifacts.json');
 validateCorpus(papers, taxonomy);
 const texts = papers.map(analysisText);
 const config = protocol.similarity;
@@ -24,11 +25,16 @@ if (!vectors) {
     console.log(`Embedded ${i+1}/${texts.length}: ${papers[i].short}`);
   }
   await extractor.dispose();
+  for (const [name, expected] of Object.entries(modelArtifacts.files)) {
+    const actual = sha256(await readFile(new URL(`.cache/models/${config.model}/${name}`, root)));
+    if (actual !== expected) throw new Error(`Embedding model file changed: ${name}. Review and update the model lock before analysis.`);
+  }
   await writeJSON(cachePath,vectors);
 }
 if (vectors.length !== papers.length || vectors.some(v => v.length !== 384 || v.some(n=>!Number.isFinite(n)))) throw new Error('Invalid embedding output');
 await writeJSON('research/similarity.json', {
   generatedAt:new Date().toISOString(), inputHash, model:config.model, dtype:config.dtype,
+  modelArtifacts,
   pooling:config.pooling, normalize:config.normalize, dimensions:384, metric:config.metric,
   textBasis:config.text, method:'Local sentence embeddings with cosine similarity; taxonomy groups are overlapping source-based interpretations.',
   neighborCount:config.neighbors, neighbors:neighbors(papers,vectors,config.neighbors),

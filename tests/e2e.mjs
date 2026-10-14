@@ -6,7 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
 import AxeBuilder from '@axe-core/playwright';
 import { root, readJSON } from '../scripts/lib.mjs';
+import {findings} from '../research/findings.mjs';
 const papers=await readJSON('research/papers.json'),taxonomy=await readJSON('research/taxonomy.json');
+const projects=await readJSON('research/projects.json');
 await mkdir(new URL('artifacts/',root),{recursive:true});
 const tests=[];
 let browser,processServer,base;
@@ -48,7 +50,7 @@ try{
     await page.getByLabel('Workflow stage').selectOption('plan');
     assert.equal(await page.locator('#paper-grid article:visible').count(),papers.filter(p=>p.storageCategories.includes('histories')&&p.stages.includes('plan')).length);
     await page.locator('#reset-filters').click();await page.getByLabel('Memory storage category').selectOption('backends');
-    assert.equal(await page.locator('#paper-grid article:visible').count(),2);
+    assert.equal(await page.locator('#paper-grid article:visible').count(),papers.filter(p=>p.storageCategories.includes('backends')).length);
     await page.locator('#reset-filters').click();
   });
   await check('storage browse pages and paper evidence are accessible through navigation',async()=>{
@@ -104,16 +106,25 @@ try{
   await check('category pages and deep filter links navigate correctly',async()=>{
     await page.getByRole('link',{name:'Memory families',exact:true}).click();assert.equal(await page.locator('main > .family-grid > .family-card').count(),taxonomy.length);
     await page.locator('.family-card[href="categories/context.html"]').click();const expected=papers.filter(p=>p.categories.includes('context')).length;assert.equal(await page.locator('.paper-grid article').count(),expected);
-    await page.getByRole('link',{name:'Filter this family',exact:false}).click();await page.waitForFunction(()=>!document.getElementById('search').disabled);assert.equal(await page.locator('#paper-grid article:visible').count(),expected);
+    await page.getByRole('link',{name:'Filter this tag',exact:false}).click();await page.waitForFunction(()=>!document.getElementById('search').disabled);assert.equal(await page.locator('#paper-grid article:visible').count(),expected);
   });
   await check('findings page summarizes the collection with paper and primary-source links',async()=>{
     await page.getByRole('link',{name:'Findings',exact:true}).click();
     assert.ok(page.url().endsWith('/findings.html'));
-    assert.equal(await page.locator('.finding-section').count(),7);
-    assert.equal(await page.locator('.finding-section p:not(.finding-records)').count(),20);
+    assert.equal(await page.locator('.finding-section').count(),findings.length+1);
+    assert.equal(await page.locator('.finding-section p:not(.finding-records)').count(),findings.reduce((count,finding)=>count+finding.paragraphs.length,2));
     assert.ok(await page.locator('.finding-citations a[href^="https://"]').count()>20);
     await page.locator('.finding-records a[href="papers/2505.23422.html"]').first().click();
     assert.ok(page.url().endsWith('/papers/2505.23422.html'));
+  });
+  await check('GitHub projects are browsable and linked to related papers',async()=>{
+    await page.getByRole('link',{name:'GitHub projects',exact:true}).click();
+    assert.ok(page.url().endsWith('/projects.html'));
+    assert.equal(await page.locator('.project-card').count(),projects.length);
+    assert.equal(await page.locator('.project-card .project-links a').count(),projects.length*2);
+    await page.locator('#swe-agent .project-papers a').first().click();
+    assert.ok(page.url().endsWith('/papers/2405.15793.html'));
+    assert.ok(await page.getByRole('link',{name:'SWE-agent',exact:true}).count()>0);
   });
   await check('methodology explains scope, limits and analysis',async()=>{
     await page.getByRole('link',{name:'Methodology',exact:true}).click();assert.equal(await page.locator('.method-body section').count(),6);assert.ok((await page.locator('#similarity').innerText()).includes('MiniLM'));assert.ok((await page.locator('#limits').innerText()).includes('not an exhaustive'));
@@ -124,7 +135,7 @@ try{
     await page.goto(`${base}methodology.html#similarity`);assert.ok((await page.locator('#similarity').innerText()).includes('average-linkage'));
   });
   await check('dataset JSON, CSV, citations and provenance all download',async()=>{
-    for(const path of ['papers.json','papers.csv','papers.bib','similarity.json','collection-log.json','protocol.json']){
+    for(const path of ['papers.json','papers.csv','papers.bib','projects.json','similarity.json','collection-log.json','protocol.json','screening-ledger.json','extraction-review.json','similarity-sensitivity.json','similarity-review.json','publication-metadata.json','model-artifacts.json','CODING_GUIDE.md','SEARCH_PLAN.md','PROJECTS.md']){
       const response=await context.request.get(`${base}data/${path}`);assert.equal(response.status(),200);assert.ok((await response.body()).length>0);
     }
     const event=page.waitForEvent('download');await page.locator('#downloads a[href="data/papers.json"]').click();const download=await event;assert.equal(JSON.parse(await readFile(await download.path(),'utf8')).length,papers.length);
@@ -153,12 +164,13 @@ try{
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile.png',root)),fullPage:false});
     await page.goto(`${base}findings.html`);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile-findings.png',root)),fullPage:false});
+    await page.goto(`${base}projects.html`);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);
     await page.getByRole('searchbox',{name:'Search papers'}).fill('ToM-SWE');assert.equal(await page.locator('#paper-grid article:visible').count(),1);await page.getByRole('link',{name:papers.find(p=>p.short==='ToM-SWE').title,exact:true}).click();await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     await page.screenshot({path:fileURLToPath(new URL('artifacts/mobile-paper.png',root)),fullPage:true});
   });
   await check('small mobile and tablet remain within the viewport',async()=>{
-    for(const width of [320,768]){await page.setViewportSize({width,height:900});await page.goto(base);await page.waitForFunction(()=>!document.getElementById('search').disabled);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),`Overflow at ${width}`);}
+    for(const width of [320,768]){for(const path of ['index.html','projects.html']){await page.setViewportSize({width,height:900});await page.goto(base+path);if(path==='index.html')await page.waitForFunction(()=>!document.getElementById('search').disabled);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),`Overflow at ${width} on ${path}`);}}
   });
   await check('a failed dataset request preserves static papers with an error message',async()=>{
     const failurePage=await context.newPage();await failurePage.route('**/data/papers.json',route=>route.fulfill({status:503,body:'Unavailable'}));await failurePage.goto(base);await failurePage.locator('#data-error').waitFor({state:'visible'});assert.equal(await failurePage.locator('#paper-grid article').count(),papers.length);assert.ok(await failurePage.getByRole('searchbox',{name:'Search papers'}).isDisabled());await failurePage.close();
@@ -169,9 +181,9 @@ try{
   await check('site has no runtime external requests and works with external network blocked',async()=>{
     const offline=await browser.newContext();const p=await offline.newPage(),external=[];await p.route('**/*',route=>{const url=route.request().url();if(url.startsWith(base))return route.continue();external.push(url);return route.abort();});await p.goto(base);await p.waitForFunction(()=>!document.getElementById('search').disabled);await p.evaluate(()=>document.fonts.ready);assert.equal(external.length,0);await offline.close();
   });
-  await check('WCAG accessibility audit passes collection, findings, detail, taxonomy and methodology',async()=>{
+  await check('WCAG accessibility audit passes collection, findings, projects, detail, taxonomy and methodology',async()=>{
     await page.setViewportSize({width:1440,height:1000});
-    for(const path of ['index.html','findings.html',`papers/${papers[0].id}.html`,'categories.html','methodology.html','storage.html','storage/histories.html']){
+    for(const path of ['index.html','findings.html','projects.html',`papers/${papers[0].id}.html`,'categories.html','methodology.html','storage.html','storage/histories.html']){
       await page.goto(base+path);await page.evaluate(()=>document.fonts.ready);
       const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
       await writeFile(new URL(`artifacts/accessibility-${path.replaceAll('/','-')}.json`,root),JSON.stringify(result,null,2));

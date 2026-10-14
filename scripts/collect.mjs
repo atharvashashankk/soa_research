@@ -6,6 +6,7 @@ import { root, readJSON, writeJSON, sha256, deduplicate, validateCorpus } from '
 
 const protocol = await readJSON('research/protocol.json');
 const taxonomy = await readJSON('research/taxonomy.json');
+const publicationMetadata = await readJSON('research/publication-metadata.json');
 const refresh = process.argv.includes('--refresh');
 const discover = process.argv.includes('--discover');
 const fullText = process.argv.includes('--full-text');
@@ -72,15 +73,45 @@ async function scrape(id) {
 
 if (discover) {
   const candidates = [];
+  const queryResults = [];
   for (const query of protocol.queries) {
     const date = ` AND submittedDate:[${protocol.start.replaceAll('-','')}0000 TO ${protocol.cutoff.replaceAll('-','')}2359]`;
-    const url = `https://export.arxiv.org/api/query?search_query=${encodeURIComponent(query + date)}&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending`;
-    try { candidates.push(...parseAtom(await request(url)).map(p => ({...p,query,screening:'pending', reason:'Discovery match; not yet assessed for inclusion'}))); }
-    catch (e) { console.error(e.message); }
+    const queryCandidates = [];
+    let start = 0;
+    let reportedTotal = null;
+    let pageCount = 0;
+    while (reportedTotal === null || start < reportedTotal) {
+      const url = `https://export.arxiv.org/api/query?search_query=${encodeURIComponent(query + date)}&start=${start}&max_results=100&sortBy=submittedDate&sortOrder=descending`;
+      const xml = await request(url);
+      const feed = parser.parse(xml).feed;
+      if (!feed) throw new Error(`Invalid discovery feed: ${url}`);
+      const total = Number(feed['opensearch:totalResults']);
+      if (!Number.isInteger(total) || total < 0) throw new Error(`Missing total result count: ${url}`);
+      if (reportedTotal === null) reportedTotal = total;
+      const page = parseAtom(xml);
+      const rows = page.map(p => ({...p,query,screening:'pending', reason:'Discovery match; not yet assessed for inclusion'}));
+      candidates.push(...rows);
+      queryCandidates.push(...rows);
+      pageCount++;
+      if (!page.length || page.length < 100) break;
+      start += page.length;
+    }
+    const uniqueRetrieved = new Set(queryCandidates.map(p => p.id)).size;
+    queryResults.push({query,reportedTotal,retrievedRaw:queryCandidates.length,uniqueRetrieved,pageOverlap:queryCandidates.length-uniqueRetrieved,pages:pageCount});
   }
-  const unique = deduplicate(candidates);
+  const matches = new Map();
+  for (const row of candidates) {
+    if (!matches.has(row.id)) matches.set(row.id,new Set());
+    matches.get(row.id).add(row.query);
+  }
+  const unique = deduplicate(candidates).map(row=>({...row,matchedQueries:[...matches.get(row.id)]}));
+  const discoveredAt = new Date().toISOString();
+  const round = discoveredAt.replaceAll(':','-').replaceAll('.','-');
+  const discoveryRecord = { collectedAt:discoveredAt, queries:protocol.queries, queryResults, cutoff:protocol.cutoff, count:unique.length, coverageCaveat:'API page overlap can leave a gap relative to reported totals; records were deduplicated by identifier. This is not an exhaustive search.', requests, errors };
+  await writeJSON(`research/search-rounds/${round}-candidates.json`, unique);
+  await writeJSON(`research/search-rounds/${round}-log.json`, discoveryRecord);
   await writeJSON('research/candidates.json', unique);
-  await writeJSON('research/discovery-log.json',{ collectedAt:new Date().toISOString(), queries:protocol.queries, cutoff:protocol.cutoff, count:unique.length, requests, errors });
+  await writeJSON('research/discovery-log.json',discoveryRecord);
   if (!unique.length) throw new Error('Discovery produced no candidates; see discovery-log.json');
   console.log(`Discovered ${unique.length} unique candidates. Human screening is required before inclusion.`);
 } else {
@@ -114,6 +145,8 @@ if (discover) {
       sourceUrl:`https://arxiv.org/abs/${p.id}${p.version}`, pdfUrl:`https://arxiv.org/pdf/${p.id}${p.version}`,
       evidenceUrl:`https://arxiv.org/${curated.evidencePath || 'abs'}/${p.id}${p.version}`,
       publication:alternate?.publication || 'Preprint', venue:alternate?.venue || 'arXiv', alternateSources:alternate ? [alternate] : [],
+      doi:publicationMetadata[p.id]?.doi || p.doi,
+      citationStatus:publicationMetadata[p.id]?.citationStatus || 'preprint metadata only',
       year:Number(p.published.slice(0,4)), fullTextStatus,
       inclusionReason:'Explicit coding-agent memory method or memory evaluation with a software-development setting.',
       metadataCheckedAt:new Date().toISOString(), abstractHash:sha256(abstract)
